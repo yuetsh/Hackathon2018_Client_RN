@@ -1,0 +1,41 @@
+{
+  "name": "Hackathon2018_Client",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "fstart": "react-native start --reset-cache",
+    "rnlink": "react-native link",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "format": "prettier-standard 'src/**/*.js'",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.js": [
+        "prettier-standard",
+        "git add"
+      ]
+    }
+  },
+  "dependencies": {
+    "mobx": "^5.0.4",
+    "mobx-react": "^5.2.5",
+    "react": "16.4.1",
+    "react-native": "0.56.0",
+    "styled-components": "^3.4.4"
+  },
+  "devDependencies": {
+    "babel-jest": "23.4.2",
+    "babel-preset-react-native": "^5",
+    "husky": "^0.14.3",
+    "jest": "23.5.0",
+    "lint-staged": "^7.2.2",
+    "prettier-standard": "^8.0.1",
+    "react-test-renderer": "16.4.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
