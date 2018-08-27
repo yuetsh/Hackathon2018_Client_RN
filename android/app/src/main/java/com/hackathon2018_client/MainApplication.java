@@ -3,6 +3,7 @@ package com.hackathon2018_client;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -10,6 +11,8 @@ import com.facebook.soloader.SoLoader;
 
 import java.util.Arrays;
 import java.util.List;
+
+import org.devio.rn.splashscreen.SplashScreen;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -22,7 +25,8 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-          new MainReactPackage()
+          new MainReactPackage(),
+            new SplashScreenReactPackage()
       );
     }
 
@@ -40,6 +44,7 @@ public class MainApplication extends Application implements ReactApplication {
   @Override
   public void onCreate() {
     super.onCreate();
+    SplashScreen.show(this);
     SoLoader.init(this, /* native exopackage */ false);
   }
 }

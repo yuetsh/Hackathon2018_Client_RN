@@ -1,38 +1,24 @@
 import React, { Component } from 'react'
-import { Platform, StyleSheet, Text, View } from 'react-native'
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\nCmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\nShake or press menu button for dev menu'
-})
+import { NativeRouter, Route, Switch } from 'react-router-native'
+import SplashScreen from 'react-native-splash-screen'
+import HomeScreen from './screens/HomeScreen'
+import EditingScreen from './screens/EditingScreen'
 
 export default class App extends Component {
+  componentDidMount () {
+    // do stuff while splash screen is shown
+    // After having done stuff (such as async tasks) hide the splash screen
+    SplashScreen.hide()
+  }
+
   render () {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+      <NativeRouter>
+        <Switch>
+          <Route exact path='/' component={HomeScreen} />
+          <Route path='/editing/:name' component={EditingScreen} />
+        </Switch>
+      </NativeRouter>
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
-  }
-})
