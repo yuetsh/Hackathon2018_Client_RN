@@ -61,3 +61,6 @@ ios/Hackathon2018_Client/AppCenter-Config.plist
 
 #Pod
 ios/Pods
+
+#Jest
+.jest/
