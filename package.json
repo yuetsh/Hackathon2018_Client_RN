@@ -20,6 +20,9 @@
     }
   },
   "dependencies": {
+    "appcenter": "^1.8.0",
+    "appcenter-analytics": "^1.8.0",
+    "appcenter-crashes": "^1.8.0",
     "react": "16.4.1",
     "react-native": "0.56.0",
     "react-native-splash-screen": "^3.1.1",
@@ -35,6 +38,11 @@
     "react-test-renderer": "16.4.1"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "setupFiles": [
+      "<rootDir>/node_modules/appcenter-analytics/test/AppCenterAnalyticsMock.js",
+      "<rootDir>/node_modules/appcenter-crashes/test/AppCenterCrashesMock.js",
+      "<rootDir>/node_modules/appcenter/test/AppCenterMock.js"
+    ]
   }
 }
