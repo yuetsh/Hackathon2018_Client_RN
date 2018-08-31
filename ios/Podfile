@@ -9,26 +9,5 @@ target 'Hackathon2018_Client' do
   # use_frameworks!
 
   # Pods for Hackathon2018_Client
-
-  
-
   platform :ios, '9.0'
-  target 'Hackathon2018_ClientTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-end
-
-target 'Hackathon2018_Client-tvOS' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
-
-  # Pods for Hackathon2018_Client-tvOS
-
-  target 'Hackathon2018_Client-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end
