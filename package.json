@@ -30,7 +30,8 @@
     "react": "16.4.2",
     "react-native": "0.56.0",
     "react-native-splash-screen": "^3.1.1",
-    "react-navigation": "^2.12.1"
+    "react-navigation": "^2.12.1",
+    "react-navigation-fluid-transitions": "^0.2.5"
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",
@@ -64,6 +65,9 @@
       "<rootDir>/node_modules/",
       "<rootDir>/lib/"
     ],
-    "cacheDirectory": ".jest/cache"
+    "cacheDirectory": ".jest/cache",
+    "setupFiles": [
+      "<rootDir>/node_modules/appcenter-crashes/test/AppCenterCrashesMock.js"
+    ]
   }
 }

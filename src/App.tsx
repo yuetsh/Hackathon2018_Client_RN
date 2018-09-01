@@ -1,16 +1,20 @@
 import React from 'react'
 import SplashScreen from 'react-native-splash-screen'
-import { createStackNavigator } from 'react-navigation'
 import HomeScreen from './screens/HomeScreen'
 import EditingScreen from './screens/EditingScreen'
+import { createStackNavigator } from 'react-navigation'
 
-const RootStack = createStackNavigator(
+const Navigator = createStackNavigator(
   {
     Home: HomeScreen,
     Editing: EditingScreen
   },
   {
-    initialRouteName: 'Home'
+    headerMode: 'float',
+    initialRouteName: 'Home',
+    navigationOptions: {
+      gesturesEnabled: true
+    }
   }
 )
 
@@ -20,6 +24,6 @@ export default class App extends React.Component {
   }
 
   render () {
-    return <RootStack />
+    return <Navigator />
   }
 }
