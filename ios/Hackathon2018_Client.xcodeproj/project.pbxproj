@@ -337,28 +337,23 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Hackathon2018_Client/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Hackathon2018_Client/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		14F4E16A87C25EBBDD25BEC7 /* Pods-Hackathon2018_ClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2018_ClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2018_ClientTests/Pods-Hackathon2018_ClientTests.release.xcconfig"; sourceTree = "<group>"; };
 		249296FEA1E36D0BE7DD0740 /* Pods-Hackathon2018_Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2018_Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2018_Client/Pods-Hackathon2018_Client.debug.xcconfig"; sourceTree = "<group>"; };
 		264B9F5F83984E4F9D96A3E3 /* libSplashScreen.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSplashScreen.a; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F1C6069DB62DA68D560D0F8 /* Pods-Hackathon2018_Client-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2018_Client-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2018_Client-tvOSTests/Pods-Hackathon2018_Client-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2FF21B7B2C52668AB959F102 /* Pods-Hackathon2018_Client-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2018_Client-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2018_Client-tvOSTests/Pods-Hackathon2018_Client-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		5FC356CB3F77B184E53B7032 /* libPods-Hackathon2018_Client.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hackathon2018_Client.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D3EE9190B14366BB824890 /* libAppCenterReactNativeAnalytics.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNativeAnalytics.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		893097396BA082BCBF207208 /* Pods-Hackathon2018_Client-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2018_Client-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2018_Client-tvOS/Pods-Hackathon2018_Client-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		9ECAAAFAB46C471F915DFB40 /* AppCenterReactNative.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AppCenterReactNative.xcodeproj; path = ../node_modules/appcenter/ios/AppCenterReactNative.xcodeproj; sourceTree = "<group>"; };
 		A842174ACDAD4B3DA621134B /* SplashScreen.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SplashScreen.xcodeproj; path = "../node_modules/react-native-splash-screen/ios/SplashScreen.xcodeproj"; sourceTree = "<group>"; };
 		A91BFA643C14468EB1B53997 /* libAppCenterReactNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNative.a; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		C25D8A94C8CA4A0B8415AB0A /* libAppCenterReactNativeCrashes.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNativeCrashes.a; sourceTree = "<group>"; };
 		CCA99AC1849748F0B4A3FCBB /* AppCenter-Config.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "AppCenter-Config.plist"; path = "Hackathon2018_Client/AppCenter-Config.plist"; sourceTree = "<group>"; };
-		CF1DAED67EEBDEC1539F8853 /* Pods-Hackathon2018_ClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2018_ClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2018_ClientTests/Pods-Hackathon2018_ClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3ADE2EB6AC84649AA314B69 /* AppCenterReactNativeCrashes.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AppCenterReactNativeCrashes.xcodeproj; path = "../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes.xcodeproj"; sourceTree = "<group>"; };
 		DECE4ABA28664584ADA11043 /* AppCenterReactNativeAnalytics.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AppCenterReactNativeAnalytics.xcodeproj; path = "../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics.xcodeproj"; sourceTree = "<group>"; };
 		E8D457B7FCBAE86195D19314 /* Pods-Hackathon2018_Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2018_Client.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2018_Client/Pods-Hackathon2018_Client.release.xcconfig"; sourceTree = "<group>"; };
-		EFCBC1F4FB266C250924B0B8 /* Pods-Hackathon2018_Client-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2018_Client-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2018_Client-tvOS/Pods-Hackathon2018_Client-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,6 +530,7 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				5FC356CB3F77B184E53B7032 /* libPods-Hackathon2018_Client.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -627,12 +623,6 @@
 			children = (
 				249296FEA1E36D0BE7DD0740 /* Pods-Hackathon2018_Client.debug.xcconfig */,
 				E8D457B7FCBAE86195D19314 /* Pods-Hackathon2018_Client.release.xcconfig */,
-				EFCBC1F4FB266C250924B0B8 /* Pods-Hackathon2018_Client-tvOS.debug.xcconfig */,
-				893097396BA082BCBF207208 /* Pods-Hackathon2018_Client-tvOS.release.xcconfig */,
-				2F1C6069DB62DA68D560D0F8 /* Pods-Hackathon2018_Client-tvOSTests.debug.xcconfig */,
-				2FF21B7B2C52668AB959F102 /* Pods-Hackathon2018_Client-tvOSTests.release.xcconfig */,
-				CF1DAED67EEBDEC1539F8853 /* Pods-Hackathon2018_ClientTests.debug.xcconfig */,
-				14F4E16A87C25EBBDD25BEC7 /* Pods-Hackathon2018_ClientTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1074,7 +1064,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		C081C6F3C0896A64D7A38C47 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

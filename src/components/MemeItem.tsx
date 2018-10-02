@@ -24,4 +24,4 @@ class MemeItem extends React.Component<MemeItemProps> {
   }
 }
 
-export default withNavigation(MemeItem as any)
+export default withNavigation(MemeItem as any) as React.ReactType

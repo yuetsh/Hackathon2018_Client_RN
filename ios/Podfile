@@ -4,10 +4,10 @@
 target 'Hackathon2018_Client' do
   pod 'AppCenter/Crashes', '~> 1.9.0'
   pod 'AppCenter/Analytics', '~> 1.9.0'
-  pod 'AppCenterReactNativeShared', '~> 1.8.0'
+  pod 'AppCenterReactNativeShared', '~> 1.8.1'
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
   # Pods for Hackathon2018_Client
-  platform :ios, '9.0'
+  platform :ios, '11.0'
 end
