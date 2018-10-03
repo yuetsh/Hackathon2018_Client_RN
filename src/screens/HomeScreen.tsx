@@ -43,18 +43,17 @@ class HomeScreen extends React.Component<HomeScreenProps> {
   }
 
   public render () {
+    const loading = !this.state.data.length
+    if (loading) return <Loading />
     return (
-      <React.Fragment>
-        <Loading />
-        <FlatList
-          data={this.state.data}
-          renderItem={this.renderItem}
-          keyExtractor={this.keyExtractor}
-          ItemSeparatorComponent={this.renderSeparator}
-          ListHeaderComponent={this.renderHeader}
-          ListFooterComponent={this.renderFooter}
-        />
-      </React.Fragment>
+      <FlatList
+        data={this.state.data}
+        renderItem={this.renderItem}
+        keyExtractor={this.keyExtractor}
+        ItemSeparatorComponent={this.renderSeparator}
+        ListHeaderComponent={this.renderHeader}
+        ListFooterComponent={this.renderFooter}
+      />
     )
   }
 }
