@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19F0C00F259BCF6617B1B267DD8C204C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		3A6499475FF17BCFFCEC8B20146BC3BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		616C407614501F11934AC8E3B1BEE688 /* Pods-Hackathon2018_Client_RNTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A284DDA02BA883562B6963F41660BBD /* Pods-Hackathon2018_Client_RNTests-dummy.m */; };
-		92FDB5AA39754B1D8DF876479B2028A4 /* Pods-Hackathon2018_Client_RN-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5443B566BE7ED11E33E9768912997A24 /* Pods-Hackathon2018_Client_RN-dummy.m */; };
-		B22AD6FF7E5674187EA8D33CEB648B7C /* Pods-Hackathon2018_Client_RNTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B5A05C887DA6BEDBEE9EAD58F421465 /* Pods-Hackathon2018_Client_RNTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2983810BA8D29A83CC851520D6A920A /* Pods-Hackathon2018_Client_RN-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2746744A43752CF7F3033B86721572 /* Pods-Hackathon2018_Client_RN-tvOS-dummy.m */; };
-		DD11E5E7F673E1B8F450736361FFC486 /* Pods-Hackathon2018_Client_RN-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C659D172CA03CD562D85FB9AF122A1 /* Pods-Hackathon2018_Client_RN-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3D71EC5115D1E9539AEB413D0990FE8 /* Pods-Hackathon2018_Client_RN-tvOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC235B08A37AB351DE80CFA470ACFFC8 /* Pods-Hackathon2018_Client_RN-tvOSTests-dummy.m */; };
+		0F83AC4A17E8CB4B017FEB96D0608C30 /* Pods-Hackathon2018_Client_RN-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF07A7D712354B6D641B13EDC08460EA /* Pods-Hackathon2018_Client_RN-dummy.m */; };
+		5381DAFA062086034C40D5321E1093B7 /* Pods-Hackathon2018_Client_RNTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC27EE363DDE69E415C7FD4BA537ED62 /* Pods-Hackathon2018_Client_RNTests-dummy.m */; };
+		B2983810BA8D29A83CC851520D6A920A /* Pods-Hackathon2018_Client_RN-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A39EB0A9F7D069E30A7369BE3F2F7AE5 /* Pods-Hackathon2018_Client_RN-tvOS-dummy.m */; };
+		E3D71EC5115D1E9539AEB413D0990FE8 /* Pods-Hackathon2018_Client_RN-tvOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6963DD4D710A75ECB6EED2CE691302 /* Pods-Hackathon2018_Client_RN-tvOSTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,76 +21,67 @@
 			remoteGlobalIDString = 9DE6B9245344285BAD0663CC6AE7B502;
 			remoteInfo = "Pods-Hackathon2018_Client_RN-tvOS";
 		};
-		413781248303876BE584AEEAEE85BDD5 /* PBXContainerItemProxy */ = {
+		F31E04B0DE57BFDCDC2E5AC6097DCA5B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3091DF75A8D6F04A50DFDEF3E14499E1;
+			remoteGlobalIDString = 468247FFFD5DD300B9039E1BDB409CDC;
 			remoteInfo = "Pods-Hackathon2018_Client_RN";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		005B2E30FB483408024D0205C83C4DD2 /* Pods-Hackathon2018_Client_RN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RN.debug.xcconfig"; sourceTree = "<group>"; };
-		077152523728776D7BC7DEDC026D821D /* Pods-Hackathon2018_Client_RN-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RN-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		08C659D172CA03CD562D85FB9AF122A1 /* Pods-Hackathon2018_Client_RN-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hackathon2018_Client_RN-umbrella.h"; sourceTree = "<group>"; };
-		0A284DDA02BA883562B6963F41660BBD /* Pods-Hackathon2018_Client_RNTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hackathon2018_Client_RNTests-dummy.m"; sourceTree = "<group>"; };
-		0A865ECD6F696629C212B8C29DCEFF43 /* Pods-Hackathon2018_Client_RN-tvOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hackathon2018_Client_RN-tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
-		1404AE40448AE26FF867EA7296F086C6 /* Pods-Hackathon2018_Client_RN-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hackathon2018_Client_RN-acknowledgements.plist"; sourceTree = "<group>"; };
-		1A62CB2FD6F1624142F889C31EDCCC73 /* Pods_Hackathon2018_Client_RNTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hackathon2018_Client_RNTests.framework; path = "Pods-Hackathon2018_Client_RNTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		021E7E7E0FC66E094D16C3A4B78C1D3A /* Pods-Hackathon2018_Client_RN-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RN-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		103CB108164DF931CFA2A30393C4F99C /* Pods-Hackathon2018_Client_RNTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RNTests.release.xcconfig"; sourceTree = "<group>"; };
+		13C6B957629B4D48352B8DF33B1393B3 /* Pods-Hackathon2018_Client_RNTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RNTests-resources.sh"; sourceTree = "<group>"; };
+		17E4E09D2223C9580CF66B0896B6FF11 /* libPods-Hackathon2018_Client_RN-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Hackathon2018_Client_RN-tvOSTests.a"; path = "libPods-Hackathon2018_Client_RN-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BBD5B9628E658A30AEE6AB72BE6C987 /* Pods-Hackathon2018_Client_RN-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RN-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		1FF8CBE3D70C3B5EE02BF7F1402952A2 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = "AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework"; sourceTree = "<group>"; };
-		27C01AAE3A4188BE02E7B2C04E113725 /* Pods-Hackathon2018_Client_RN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RN.release.xcconfig"; sourceTree = "<group>"; };
 		2E280B58529AEBA76B5F11C0705D0856 /* AppCenterReactNativeShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterReactNativeShared.framework; path = AppCenterReactNativeShared/AppCenterReactNativeShared.framework; sourceTree = "<group>"; };
-		3ADC57128240C0473BC8DDA592F2E26E /* Pods-Hackathon2018_Client_RN-tvOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RN-tvOSTests-frameworks.sh"; sourceTree = "<group>"; };
-		3D053349B11B7F8EEED862B84DF98752 /* Pods-Hackathon2018_Client_RN-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hackathon2018_Client_RN-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4753CB8C27AFC27675C4D4E100C6BD33 /* Pods-Hackathon2018_Client_RN-tvOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hackathon2018_Client_RN-tvOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		520EE9DC9BB96D354C1411A294EA456A /* Pods-Hackathon2018_Client_RNTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RNTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5443B566BE7ED11E33E9768912997A24 /* Pods-Hackathon2018_Client_RN-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hackathon2018_Client_RN-dummy.m"; sourceTree = "<group>"; };
-		57E5F0D794124785B29C54FD3C30E1EF /* libPods-Hackathon2018_Client_RN-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Hackathon2018_Client_RN-tvOSTests.a"; path = "libPods-Hackathon2018_Client_RN-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5805E7A6711ACB8EF12FA3308391F3F9 /* Pods-Hackathon2018_Client_RNTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RNTests.release.xcconfig"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5AD8270C45FB20B46501FD8EEC3A47A7 /* Pods-Hackathon2018_Client_RNTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hackathon2018_Client_RNTests.modulemap"; sourceTree = "<group>"; };
-		643B71E8D56ADBE0277969366444F7C1 /* Pods-Hackathon2018_Client_RN-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RN-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		385994C92AAD805D893F50146458E82F /* libPods-Hackathon2018_Client_RN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Hackathon2018_Client_RN.a"; path = "libPods-Hackathon2018_Client_RN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		415F1E5B839C7DDDCB578E8523B309DB /* Pods-Hackathon2018_Client_RN-tvOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hackathon2018_Client_RN-tvOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5B648B01B0B65E871C07B79A9981240B /* Pods-Hackathon2018_Client_RN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RN.release.xcconfig"; sourceTree = "<group>"; };
+		5BE6CA774C1E99F33B77D5AB581B02BF /* Pods-Hackathon2018_Client_RN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RN.debug.xcconfig"; sourceTree = "<group>"; };
+		627616B75D5448D126FD01697B0A2227 /* Pods-Hackathon2018_Client_RNTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hackathon2018_Client_RNTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		63F617C3BEF3932BF61E36D77B738DD1 /* libPods-Hackathon2018_Client_RNTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Hackathon2018_Client_RNTests.a"; path = "libPods-Hackathon2018_Client_RNTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		666E82A7EF21D70994739A8F0E1153A2 /* Pods-Hackathon2018_Client_RN-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hackathon2018_Client_RN-acknowledgements.markdown"; sourceTree = "<group>"; };
 		697057EB6F6A315777E7EA941A2AAF3B /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = "AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework"; sourceTree = "<group>"; };
-		6ABC1ACC84162D0681178DC0981B683C /* Pods_Hackathon2018_Client_RN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hackathon2018_Client_RN.framework; path = "Pods-Hackathon2018_Client_RN.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F2746744A43752CF7F3033B86721572 /* Pods-Hackathon2018_Client_RN-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hackathon2018_Client_RN-tvOS-dummy.m"; sourceTree = "<group>"; };
-		7B2B2896143950B7A5D8D6E25495FDDE /* Pods-Hackathon2018_Client_RNTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RNTests-frameworks.sh"; sourceTree = "<group>"; };
-		7B5A05C887DA6BEDBEE9EAD58F421465 /* Pods-Hackathon2018_Client_RNTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hackathon2018_Client_RNTests-umbrella.h"; sourceTree = "<group>"; };
-		87099CB1C4A2339AB323995A0594E82B /* Pods-Hackathon2018_Client_RN-tvOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RN-tvOS-resources.sh"; sourceTree = "<group>"; };
-		8E4A7B9876B513DE94E77788CCDE6EB1 /* Pods-Hackathon2018_Client_RN-tvOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RN-tvOSTests-resources.sh"; sourceTree = "<group>"; };
-		90BF480AB94E32443A0C0181CDDDFE8F /* Pods-Hackathon2018_Client_RN-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RN-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		932620F706B92C74D9EE2952C5424870 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		748FB5DCBE7A43C4718F6E104B603996 /* Pods-Hackathon2018_Client_RN-tvOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RN-tvOS-frameworks.sh"; sourceTree = "<group>"; };
+		781534CD741CAE4A25B27CDEF1E0AEEA /* Pods-Hackathon2018_Client_RN-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hackathon2018_Client_RN-acknowledgements.plist"; sourceTree = "<group>"; };
+		7C9D8E7EFE11FF8D2E4921667878AD15 /* Pods-Hackathon2018_Client_RN-tvOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hackathon2018_Client_RN-tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		86AF20B00197771FDEBB36AD35DCF028 /* Pods-Hackathon2018_Client_RN-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RN-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8F822554E3D66B4EA221E1AB47220E07 /* libPods-Hackathon2018_Client_RN-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Hackathon2018_Client_RN-tvOS.a"; path = "libPods-Hackathon2018_Client_RN-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97487C840615C010FBB194A133708A12 /* libPods-Hackathon2018_Client_RN-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Hackathon2018_Client_RN-tvOS.a"; path = "libPods-Hackathon2018_Client_RN-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B40720920EC4B1C6FD2B1D020F0CCB0 /* Pods-Hackathon2018_Client_RN-tvOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RN-tvOS-frameworks.sh"; sourceTree = "<group>"; };
-		B90A865D71DFC20794882AA4A43899F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB25A43FD1359D9B2AFA8EF0063C6DBC /* Pods-Hackathon2018_Client_RNTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hackathon2018_Client_RNTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C895C3D003F520E08A4DAE1F3EF5CC16 /* Pods-Hackathon2018_Client_RN-tvOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hackathon2018_Client_RN-tvOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CAED9962040034420B30FD77121788ED /* Pods-Hackathon2018_Client_RN-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RN-frameworks.sh"; sourceTree = "<group>"; };
-		CB962B6CCA2107E83275FBE12757BB63 /* Pods-Hackathon2018_Client_RN-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RN-resources.sh"; sourceTree = "<group>"; };
-		CD5AC71CF298A0BAFF9F299DE62542B3 /* Pods-Hackathon2018_Client_RN-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RN-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A53FFE58FEF2B90D0A96EBB2E7AC438 /* Pods-Hackathon2018_Client_RN-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hackathon2018_Client_RN-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D6963DD4D710A75ECB6EED2CE691302 /* Pods-Hackathon2018_Client_RN-tvOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hackathon2018_Client_RN-tvOSTests-dummy.m"; sourceTree = "<group>"; };
+		A39EB0A9F7D069E30A7369BE3F2F7AE5 /* Pods-Hackathon2018_Client_RN-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hackathon2018_Client_RN-tvOS-dummy.m"; sourceTree = "<group>"; };
+		A52F524020DD905A2FF0F8EBF02AB21E /* Pods-Hackathon2018_Client_RN-tvOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RN-tvOSTests-resources.sh"; sourceTree = "<group>"; };
+		AD77539D7C4274D8539AB68DEEEDDA41 /* Pods-Hackathon2018_Client_RN-tvOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RN-tvOSTests-frameworks.sh"; sourceTree = "<group>"; };
+		AE4A945B6B9DB0310F39C3B8A69E7291 /* Pods-Hackathon2018_Client_RNTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RNTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF2A9C7AA226E9C4BA9C355DEEB77FEF /* Pods-Hackathon2018_Client_RNTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hackathon2018_Client_RNTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B0CCFBC054BA6004898B75FD1EFFAA21 /* Pods-Hackathon2018_Client_RNTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RNTests-frameworks.sh"; sourceTree = "<group>"; };
+		B59B5D4009618F69A945640D99D2E65A /* Pods-Hackathon2018_Client_RN-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RN-resources.sh"; sourceTree = "<group>"; };
+		C5A2811623974C637264EDFB36979364 /* Pods-Hackathon2018_Client_RN-tvOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hackathon2018_Client_RN-tvOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CF07A7D712354B6D641B13EDC08460EA /* Pods-Hackathon2018_Client_RN-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hackathon2018_Client_RN-dummy.m"; sourceTree = "<group>"; };
+		D38951A3B328845A73DE04C32E6A5A93 /* Pods-Hackathon2018_Client_RN-tvOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RN-tvOS-resources.sh"; sourceTree = "<group>"; };
 		DC65AFFB7964130E42157D207BE3A6DE /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenter.framework; path = "AppCenter-SDK-Apple/iOS/AppCenter.framework"; sourceTree = "<group>"; };
-		DF3A3993C1885675DF0031C0505245DF /* Pods-Hackathon2018_Client_RN.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hackathon2018_Client_RN.modulemap"; sourceTree = "<group>"; };
-		E9C1C713785614629A68412D85A92EF0 /* Pods-Hackathon2018_Client_RNTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RNTests-resources.sh"; sourceTree = "<group>"; };
-		EC235B08A37AB351DE80CFA470ACFFC8 /* Pods-Hackathon2018_Client_RN-tvOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hackathon2018_Client_RN-tvOSTests-dummy.m"; sourceTree = "<group>"; };
-		EF2C89A417D36FB872944602054D5AC2 /* Pods-Hackathon2018_Client_RN-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hackathon2018_Client_RN-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FDE67868381A838CD0F8EA5C7DF03745 /* Pods-Hackathon2018_Client_RNTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hackathon2018_Client_RNTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EC27EE363DDE69E415C7FD4BA537ED62 /* Pods-Hackathon2018_Client_RNTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hackathon2018_Client_RNTests-dummy.m"; sourceTree = "<group>"; };
+		ECDF2D8438EF05503CE10528858A8F6C /* Pods-Hackathon2018_Client_RN-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hackathon2018_Client_RN-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1CB5BD037390A8CE8A5FEFE562D4541 /* Pods-Hackathon2018_Client_RN-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hackathon2018_Client_RN-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4889F444581FAE47FE0204D78052F200 /* Frameworks */ = {
+		1973817B424E231704937800474BAEFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19F0C00F259BCF6617B1B267DD8C204C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F6D98E3FB04EBA6C428F49AB1D72CA2 /* Frameworks */ = {
+		3466D53A9524AD4A7A16250123E623DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A6499475FF17BCFFCEC8B20146BC3BA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,27 +102,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01DAEFABF32774B9ADF85AD2F3C6F98B /* Pods-Hackathon2018_Client_RN-tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				3D053349B11B7F8EEED862B84DF98752 /* Pods-Hackathon2018_Client_RN-tvOS-acknowledgements.markdown */,
-				0A865ECD6F696629C212B8C29DCEFF43 /* Pods-Hackathon2018_Client_RN-tvOS-acknowledgements.plist */,
-				6F2746744A43752CF7F3033B86721572 /* Pods-Hackathon2018_Client_RN-tvOS-dummy.m */,
-				9B40720920EC4B1C6FD2B1D020F0CCB0 /* Pods-Hackathon2018_Client_RN-tvOS-frameworks.sh */,
-				87099CB1C4A2339AB323995A0594E82B /* Pods-Hackathon2018_Client_RN-tvOS-resources.sh */,
-				077152523728776D7BC7DEDC026D821D /* Pods-Hackathon2018_Client_RN-tvOS.debug.xcconfig */,
-				643B71E8D56ADBE0277969366444F7C1 /* Pods-Hackathon2018_Client_RN-tvOS.release.xcconfig */,
-			);
-			name = "Pods-Hackathon2018_Client_RN-tvOS";
-			path = "Target Support Files/Pods-Hackathon2018_Client_RN-tvOS";
-			sourceTree = "<group>";
-		};
 		0C0416FA3744ECAB6C76E95960896084 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				DC65AFFB7964130E42157D207BE3A6DE /* AppCenter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12E92CC3A6F0EA7EFDCFE8072E2FCE79 /* Pods-Hackathon2018_Client_RN-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				9A53FFE58FEF2B90D0A96EBB2E7AC438 /* Pods-Hackathon2018_Client_RN-tvOS-acknowledgements.markdown */,
+				7C9D8E7EFE11FF8D2E4921667878AD15 /* Pods-Hackathon2018_Client_RN-tvOS-acknowledgements.plist */,
+				A39EB0A9F7D069E30A7369BE3F2F7AE5 /* Pods-Hackathon2018_Client_RN-tvOS-dummy.m */,
+				748FB5DCBE7A43C4718F6E104B603996 /* Pods-Hackathon2018_Client_RN-tvOS-frameworks.sh */,
+				D38951A3B328845A73DE04C32E6A5A93 /* Pods-Hackathon2018_Client_RN-tvOS-resources.sh */,
+				86AF20B00197771FDEBB36AD35DCF028 /* Pods-Hackathon2018_Client_RN-tvOS.debug.xcconfig */,
+				1BBD5B9628E658A30AEE6AB72BE6C987 /* Pods-Hackathon2018_Client_RN-tvOS.release.xcconfig */,
+			);
+			name = "Pods-Hackathon2018_Client_RN-tvOS";
+			path = "Target Support Files/Pods-Hackathon2018_Client_RN-tvOS";
+			sourceTree = "<group>";
+		};
+		20B7A20F719E5E239D65AC567671237C /* Pods-Hackathon2018_Client_RN-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				415F1E5B839C7DDDCB578E8523B309DB /* Pods-Hackathon2018_Client_RN-tvOSTests-acknowledgements.markdown */,
+				C5A2811623974C637264EDFB36979364 /* Pods-Hackathon2018_Client_RN-tvOSTests-acknowledgements.plist */,
+				9D6963DD4D710A75ECB6EED2CE691302 /* Pods-Hackathon2018_Client_RN-tvOSTests-dummy.m */,
+				AD77539D7C4274D8539AB68DEEEDDA41 /* Pods-Hackathon2018_Client_RN-tvOSTests-frameworks.sh */,
+				A52F524020DD905A2FF0F8EBF02AB21E /* Pods-Hackathon2018_Client_RN-tvOSTests-resources.sh */,
+				ECDF2D8438EF05503CE10528858A8F6C /* Pods-Hackathon2018_Client_RN-tvOSTests.debug.xcconfig */,
+				021E7E7E0FC66E094D16C3A4B78C1D3A /* Pods-Hackathon2018_Client_RN-tvOSTests.release.xcconfig */,
+			);
+			name = "Pods-Hackathon2018_Client_RN-tvOSTests";
+			path = "Target Support Files/Pods-Hackathon2018_Client_RN-tvOSTests";
 			sourceTree = "<group>";
 		};
 		2299AF501E253B95F2AE1FAD00A3B182 /* Crashes */ = {
@@ -162,24 +171,6 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		433F3679CEB3A31815E7D3D0DCCDBB25 /* Pods-Hackathon2018_Client_RN */ = {
-			isa = PBXGroup;
-			children = (
-				932620F706B92C74D9EE2952C5424870 /* Info.plist */,
-				DF3A3993C1885675DF0031C0505245DF /* Pods-Hackathon2018_Client_RN.modulemap */,
-				EF2C89A417D36FB872944602054D5AC2 /* Pods-Hackathon2018_Client_RN-acknowledgements.markdown */,
-				1404AE40448AE26FF867EA7296F086C6 /* Pods-Hackathon2018_Client_RN-acknowledgements.plist */,
-				5443B566BE7ED11E33E9768912997A24 /* Pods-Hackathon2018_Client_RN-dummy.m */,
-				CAED9962040034420B30FD77121788ED /* Pods-Hackathon2018_Client_RN-frameworks.sh */,
-				CB962B6CCA2107E83275FBE12757BB63 /* Pods-Hackathon2018_Client_RN-resources.sh */,
-				08C659D172CA03CD562D85FB9AF122A1 /* Pods-Hackathon2018_Client_RN-umbrella.h */,
-				005B2E30FB483408024D0205C83C4DD2 /* Pods-Hackathon2018_Client_RN.debug.xcconfig */,
-				27C01AAE3A4188BE02E7B2C04E113725 /* Pods-Hackathon2018_Client_RN.release.xcconfig */,
-			);
-			name = "Pods-Hackathon2018_Client_RN";
-			path = "Target Support Files/Pods-Hackathon2018_Client_RN";
-			sourceTree = "<group>";
-		};
 		4789B2888C9F3A64D9BB98A64504484B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,34 +179,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		503B185167276E14B402612CCBDB1CB5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				70F4F5B21C543C1797CFAED4733E4A94 /* Pods-Hackathon2018_Client_RN */,
+				12E92CC3A6F0EA7EFDCFE8072E2FCE79 /* Pods-Hackathon2018_Client_RN-tvOS */,
+				20B7A20F719E5E239D65AC567671237C /* Pods-Hackathon2018_Client_RN-tvOSTests */,
+				BE02FD0BC1F7218CFB19E4733D46ECEE /* Pods-Hackathon2018_Client_RNTests */,
 			);
-			name = iOS;
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		70F4F5B21C543C1797CFAED4733E4A94 /* Pods-Hackathon2018_Client_RN */ = {
+			isa = PBXGroup;
+			children = (
+				666E82A7EF21D70994739A8F0E1153A2 /* Pods-Hackathon2018_Client_RN-acknowledgements.markdown */,
+				781534CD741CAE4A25B27CDEF1E0AEEA /* Pods-Hackathon2018_Client_RN-acknowledgements.plist */,
+				CF07A7D712354B6D641B13EDC08460EA /* Pods-Hackathon2018_Client_RN-dummy.m */,
+				F1CB5BD037390A8CE8A5FEFE562D4541 /* Pods-Hackathon2018_Client_RN-frameworks.sh */,
+				B59B5D4009618F69A945640D99D2E65A /* Pods-Hackathon2018_Client_RN-resources.sh */,
+				5BE6CA774C1E99F33B77D5AB581B02BF /* Pods-Hackathon2018_Client_RN.debug.xcconfig */,
+				5B648B01B0B65E871C07B79A9981240B /* Pods-Hackathon2018_Client_RN.release.xcconfig */,
+			);
+			name = "Pods-Hackathon2018_Client_RN";
+			path = "Target Support Files/Pods-Hackathon2018_Client_RN";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
 				B1C0FD4C526B54B6F7B5EA76C32A7B4C /* Pods */,
-				B4C2278534AE9538253DA9EA6A635CBF /* Products */,
-				8A0A0821B1F7349C37D2039076ACEFDA /* Targets Support Files */,
+				C658FE36A95E2690B4553969012F9F85 /* Products */,
+				503B185167276E14B402612CCBDB1CB5 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8A0A0821B1F7349C37D2039076ACEFDA /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				433F3679CEB3A31815E7D3D0DCCDBB25 /* Pods-Hackathon2018_Client_RN */,
-				01DAEFABF32774B9ADF85AD2F3C6F98B /* Pods-Hackathon2018_Client_RN-tvOS */,
-				A2A50985F06B1DE0E28A038C0C2547EB /* Pods-Hackathon2018_Client_RN-tvOSTests */,
-				B1E1BD7E705ECC595E17CA6FB5C7AF53 /* Pods-Hackathon2018_Client_RNTests */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		8E2C96EA6162ABA11EBE8E8817909062 /* Frameworks */ = {
@@ -224,21 +222,6 @@
 				697057EB6F6A315777E7EA941A2AAF3B /* AppCenterAnalytics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A2A50985F06B1DE0E28A038C0C2547EB /* Pods-Hackathon2018_Client_RN-tvOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				C895C3D003F520E08A4DAE1F3EF5CC16 /* Pods-Hackathon2018_Client_RN-tvOSTests-acknowledgements.markdown */,
-				4753CB8C27AFC27675C4D4E100C6BD33 /* Pods-Hackathon2018_Client_RN-tvOSTests-acknowledgements.plist */,
-				EC235B08A37AB351DE80CFA470ACFFC8 /* Pods-Hackathon2018_Client_RN-tvOSTests-dummy.m */,
-				3ADC57128240C0473BC8DDA592F2E26E /* Pods-Hackathon2018_Client_RN-tvOSTests-frameworks.sh */,
-				8E4A7B9876B513DE94E77788CCDE6EB1 /* Pods-Hackathon2018_Client_RN-tvOSTests-resources.sh */,
-				90BF480AB94E32443A0C0181CDDDFE8F /* Pods-Hackathon2018_Client_RN-tvOSTests.debug.xcconfig */,
-				CD5AC71CF298A0BAFF9F299DE62542B3 /* Pods-Hackathon2018_Client_RN-tvOSTests.release.xcconfig */,
-			);
-			name = "Pods-Hackathon2018_Client_RN-tvOSTests";
-			path = "Target Support Files/Pods-Hackathon2018_Client_RN-tvOSTests";
 			sourceTree = "<group>";
 		};
 		B1C0FD4C526B54B6F7B5EA76C32A7B4C /* Pods */ = {
@@ -250,41 +233,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B1E1BD7E705ECC595E17CA6FB5C7AF53 /* Pods-Hackathon2018_Client_RNTests */ = {
+		BE02FD0BC1F7218CFB19E4733D46ECEE /* Pods-Hackathon2018_Client_RNTests */ = {
 			isa = PBXGroup;
 			children = (
-				B90A865D71DFC20794882AA4A43899F6 /* Info.plist */,
-				5AD8270C45FB20B46501FD8EEC3A47A7 /* Pods-Hackathon2018_Client_RNTests.modulemap */,
-				FDE67868381A838CD0F8EA5C7DF03745 /* Pods-Hackathon2018_Client_RNTests-acknowledgements.markdown */,
-				BB25A43FD1359D9B2AFA8EF0063C6DBC /* Pods-Hackathon2018_Client_RNTests-acknowledgements.plist */,
-				0A284DDA02BA883562B6963F41660BBD /* Pods-Hackathon2018_Client_RNTests-dummy.m */,
-				7B2B2896143950B7A5D8D6E25495FDDE /* Pods-Hackathon2018_Client_RNTests-frameworks.sh */,
-				E9C1C713785614629A68412D85A92EF0 /* Pods-Hackathon2018_Client_RNTests-resources.sh */,
-				7B5A05C887DA6BEDBEE9EAD58F421465 /* Pods-Hackathon2018_Client_RNTests-umbrella.h */,
-				520EE9DC9BB96D354C1411A294EA456A /* Pods-Hackathon2018_Client_RNTests.debug.xcconfig */,
-				5805E7A6711ACB8EF12FA3308391F3F9 /* Pods-Hackathon2018_Client_RNTests.release.xcconfig */,
+				627616B75D5448D126FD01697B0A2227 /* Pods-Hackathon2018_Client_RNTests-acknowledgements.markdown */,
+				AF2A9C7AA226E9C4BA9C355DEEB77FEF /* Pods-Hackathon2018_Client_RNTests-acknowledgements.plist */,
+				EC27EE363DDE69E415C7FD4BA537ED62 /* Pods-Hackathon2018_Client_RNTests-dummy.m */,
+				B0CCFBC054BA6004898B75FD1EFFAA21 /* Pods-Hackathon2018_Client_RNTests-frameworks.sh */,
+				13C6B957629B4D48352B8DF33B1393B3 /* Pods-Hackathon2018_Client_RNTests-resources.sh */,
+				AE4A945B6B9DB0310F39C3B8A69E7291 /* Pods-Hackathon2018_Client_RNTests.debug.xcconfig */,
+				103CB108164DF931CFA2A30393C4F99C /* Pods-Hackathon2018_Client_RNTests.release.xcconfig */,
 			);
 			name = "Pods-Hackathon2018_Client_RNTests";
 			path = "Target Support Files/Pods-Hackathon2018_Client_RNTests";
 			sourceTree = "<group>";
 		};
-		B4C2278534AE9538253DA9EA6A635CBF /* Products */ = {
+		C658FE36A95E2690B4553969012F9F85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				97487C840615C010FBB194A133708A12 /* libPods-Hackathon2018_Client_RN-tvOS.a */,
-				57E5F0D794124785B29C54FD3C30E1EF /* libPods-Hackathon2018_Client_RN-tvOSTests.a */,
-				6ABC1ACC84162D0681178DC0981B683C /* Pods_Hackathon2018_Client_RN.framework */,
-				1A62CB2FD6F1624142F889C31EDCCC73 /* Pods_Hackathon2018_Client_RNTests.framework */,
+				385994C92AAD805D893F50146458E82F /* libPods-Hackathon2018_Client_RN.a */,
+				8F822554E3D66B4EA221E1AB47220E07 /* libPods-Hackathon2018_Client_RN-tvOS.a */,
+				17E4E09D2223C9580CF66B0896B6FF11 /* libPods-Hackathon2018_Client_RN-tvOSTests.a */,
+				63F617C3BEF3932BF61E36D77B738DD1 /* libPods-Hackathon2018_Client_RNTests.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D6F4E16E170AFF42D929EF8FFF92078F /* AppCenter */ = {
@@ -325,11 +297,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		37868AEB8EC8D7F081944283CB53A28D /* Headers */ = {
+		55DC6B937982E5C66AB51C2846B1883D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B22AD6FF7E5674187EA8D33CEB648B7C /* Pods-Hackathon2018_Client_RNTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,25 +311,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFFB89A8156EC38D7DEB16C4423254D8 /* Headers */ = {
+		A9998B82F4E8B89AE1187708701D085B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD11E5E7F673E1B8F450736361FFC486 /* Pods-Hackathon2018_Client_RN-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3091DF75A8D6F04A50DFDEF3E14499E1 /* Pods-Hackathon2018_Client_RN */ = {
+		468247FFFD5DD300B9039E1BDB409CDC /* Pods-Hackathon2018_Client_RN */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B36C28896348948CC21A416B8B5A4378 /* Build configuration list for PBXNativeTarget "Pods-Hackathon2018_Client_RN" */;
+			buildConfigurationList = 23834509FAD5A4959E82B679D4851DDE /* Build configuration list for PBXNativeTarget "Pods-Hackathon2018_Client_RN" */;
 			buildPhases = (
-				AFFB89A8156EC38D7DEB16C4423254D8 /* Headers */,
-				BE81E8F0AF0AF85809789F01F9AEA28E /* Sources */,
-				4889F444581FAE47FE0204D78052F200 /* Frameworks */,
-				5320444C8AFCE8BCC66FCF608EAAF2CD /* Resources */,
+				55DC6B937982E5C66AB51C2846B1883D /* Headers */,
+				E2433B93C908A254DAE4F69188E792B6 /* Sources */,
+				1973817B424E231704937800474BAEFF /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -366,27 +335,8 @@
 			);
 			name = "Pods-Hackathon2018_Client_RN";
 			productName = "Pods-Hackathon2018_Client_RN";
-			productReference = 6ABC1ACC84162D0681178DC0981B683C /* Pods_Hackathon2018_Client_RN.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3EA01538CF76641F255AF5F8B6F1A7A0 /* Pods-Hackathon2018_Client_RNTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 281E12CA14264E9EF97A7D44A1255F81 /* Build configuration list for PBXNativeTarget "Pods-Hackathon2018_Client_RNTests" */;
-			buildPhases = (
-				37868AEB8EC8D7F081944283CB53A28D /* Headers */,
-				616B83ADFB747F54CE6C73668E35059D /* Sources */,
-				4F6D98E3FB04EBA6C428F49AB1D72CA2 /* Frameworks */,
-				3AA765CAD3E88E03E7CB532ADAE5F011 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0F0F19B2F3FECAAD738B59630AE02EE3 /* PBXTargetDependency */,
-			);
-			name = "Pods-Hackathon2018_Client_RNTests";
-			productName = "Pods-Hackathon2018_Client_RNTests";
-			productReference = 1A62CB2FD6F1624142F889C31EDCCC73 /* Pods_Hackathon2018_Client_RNTests.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 385994C92AAD805D893F50146458E82F /* libPods-Hackathon2018_Client_RN.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		574E526E40CFEDA189061467C59F2C8E /* Pods-Hackathon2018_Client_RN-tvOSTests */ = {
 			isa = PBXNativeTarget;
@@ -403,7 +353,7 @@
 			);
 			name = "Pods-Hackathon2018_Client_RN-tvOSTests";
 			productName = "Pods-Hackathon2018_Client_RN-tvOSTests";
-			productReference = 57E5F0D794124785B29C54FD3C30E1EF /* libPods-Hackathon2018_Client_RN-tvOSTests.a */;
+			productReference = 17E4E09D2223C9580CF66B0896B6FF11 /* libPods-Hackathon2018_Client_RN-tvOSTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		9DE6B9245344285BAD0663CC6AE7B502 /* Pods-Hackathon2018_Client_RN-tvOS */ = {
@@ -420,7 +370,25 @@
 			);
 			name = "Pods-Hackathon2018_Client_RN-tvOS";
 			productName = "Pods-Hackathon2018_Client_RN-tvOS";
-			productReference = 97487C840615C010FBB194A133708A12 /* libPods-Hackathon2018_Client_RN-tvOS.a */;
+			productReference = 8F822554E3D66B4EA221E1AB47220E07 /* libPods-Hackathon2018_Client_RN-tvOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E844EDB2560EB12FFCEAE21BBF948FCC /* Pods-Hackathon2018_Client_RNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AED0DBBECFA1584E9120C8974BA0EB3 /* Build configuration list for PBXNativeTarget "Pods-Hackathon2018_Client_RNTests" */;
+			buildPhases = (
+				A9998B82F4E8B89AE1187708701D085B /* Headers */,
+				66E4B88DB659390ECBED92D550CFB561 /* Sources */,
+				3466D53A9524AD4A7A16250123E623DB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				186DDB8FA411AA2282A8DE8B8394B502 /* PBXTargetDependency */,
+			);
+			name = "Pods-Hackathon2018_Client_RNTests";
+			productName = "Pods-Hackathon2018_Client_RNTests";
+			productReference = 63F617C3BEF3932BF61E36D77B738DD1 /* libPods-Hackathon2018_Client_RNTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -440,34 +408,17 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B4C2278534AE9538253DA9EA6A635CBF /* Products */;
+			productRefGroup = C658FE36A95E2690B4553969012F9F85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3091DF75A8D6F04A50DFDEF3E14499E1 /* Pods-Hackathon2018_Client_RN */,
+				468247FFFD5DD300B9039E1BDB409CDC /* Pods-Hackathon2018_Client_RN */,
 				9DE6B9245344285BAD0663CC6AE7B502 /* Pods-Hackathon2018_Client_RN-tvOS */,
 				574E526E40CFEDA189061467C59F2C8E /* Pods-Hackathon2018_Client_RN-tvOSTests */,
-				3EA01538CF76641F255AF5F8B6F1A7A0 /* Pods-Hackathon2018_Client_RNTests */,
+				E844EDB2560EB12FFCEAE21BBF948FCC /* Pods-Hackathon2018_Client_RNTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		3AA765CAD3E88E03E7CB532ADAE5F011 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5320444C8AFCE8BCC66FCF608EAAF2CD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		16DC1F52F7651ADBDC62488932394BD2 /* Sources */ = {
@@ -478,19 +429,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		616B83ADFB747F54CE6C73668E35059D /* Sources */ = {
+		66E4B88DB659390ECBED92D550CFB561 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				616C407614501F11934AC8E3B1BEE688 /* Pods-Hackathon2018_Client_RNTests-dummy.m in Sources */,
+				5381DAFA062086034C40D5321E1093B7 /* Pods-Hackathon2018_Client_RNTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE81E8F0AF0AF85809789F01F9AEA28E /* Sources */ = {
+		E2433B93C908A254DAE4F69188E792B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92FDB5AA39754B1D8DF876479B2028A4 /* Pods-Hackathon2018_Client_RN-dummy.m in Sources */,
+				0F83AC4A17E8CB4B017FEB96D0608C30 /* Pods-Hackathon2018_Client_RN-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,11 +456,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0F0F19B2F3FECAAD738B59630AE02EE3 /* PBXTargetDependency */ = {
+		186DDB8FA411AA2282A8DE8B8394B502 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Hackathon2018_Client_RN";
-			target = 3091DF75A8D6F04A50DFDEF3E14499E1 /* Pods-Hackathon2018_Client_RN */;
-			targetProxy = 413781248303876BE584AEEAEE85BDD5 /* PBXContainerItemProxy */;
+			target = 468247FFFD5DD300B9039E1BDB409CDC /* Pods-Hackathon2018_Client_RN */;
+			targetProxy = F31E04B0DE57BFDCDC2E5AC6097DCA5B /* PBXContainerItemProxy */;
 		};
 		72E594149E480907C88EBA9AFF791105 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -520,9 +471,32 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		145A6946BC6AB468B9E3A8568810C0BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B648B01B0B65E871C07B79A9981240B /* Pods-Hackathon2018_Client_RN.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		1B4FF6F46FBE6530465929CEA13DC6FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 643B71E8D56ADBE0277969366444F7C1 /* Pods-Hackathon2018_Client_RN-tvOS.release.xcconfig */;
+			baseConfigurationReference = 1BBD5B9628E658A30AEE6AB72BE6C987 /* Pods-Hackathon2018_Client_RN-tvOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -545,7 +519,7 @@
 		};
 		2FF96E7FB49F4BD29C3A6619E9118F5B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD5AC71CF298A0BAFF9F299DE62542B3 /* Pods-Hackathon2018_Client_RN-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 021E7E7E0FC66E094D16C3A4B78C1D3A /* Pods-Hackathon2018_Client_RN-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -566,38 +540,26 @@
 			};
 			name = Release;
 		};
-		7BD8697F2A623E2818BE1EEA3252D579 /* Release */ = {
+		6A5F0FAB8DC90781CC81BDCA39B28C21 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5805E7A6711ACB8EF12FA3308391F3F9 /* Pods-Hackathon2018_Client_RNTests.release.xcconfig */;
+			baseConfigurationReference = 103CB108164DF931CFA2A30393C4F99C /* Pods-Hackathon2018_Client_RNTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hackathon2018_Client_RNTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hackathon2018_Client_RNTests/Pods-Hackathon2018_Client_RNTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -665,72 +627,25 @@
 			};
 			name = Debug;
 		};
-		96572F8B936B2A33CD96B478EF544821 /* Release */ = {
+		8D2E62A705F874716ABE53CDCF1C19CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27C01AAE3A4188BE02E7B2C04E113725 /* Pods-Hackathon2018_Client_RN.release.xcconfig */;
+			baseConfigurationReference = AE4A945B6B9DB0310F39C3B8A69E7291 /* Pods-Hackathon2018_Client_RNTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hackathon2018_Client_RN/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hackathon2018_Client_RN/Pods-Hackathon2018_Client_RN.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9F97709DA879A46674683696AF0DA73F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 520EE9DC9BB96D354C1411A294EA456A /* Pods-Hackathon2018_Client_RNTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hackathon2018_Client_RNTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hackathon2018_Client_RNTests/Pods-Hackathon2018_Client_RNTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -793,43 +708,9 @@
 			};
 			name = Release;
 		};
-		B84BA4BB034C76224C4774186A123C4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 005B2E30FB483408024D0205C83C4DD2 /* Pods-Hackathon2018_Client_RN.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hackathon2018_Client_RN/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hackathon2018_Client_RN/Pods-Hackathon2018_Client_RN.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		BFE9493A65F8D41C624338D0453246BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 077152523728776D7BC7DEDC026D821D /* Pods-Hackathon2018_Client_RN-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 86AF20B00197771FDEBB36AD35DCF028 /* Pods-Hackathon2018_Client_RN-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -851,7 +732,29 @@
 		};
 		C592F62CA0D00B5EC409427119B39C00 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90BF480AB94E32443A0C0181CDDDFE8F /* Pods-Hackathon2018_Client_RN-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = ECDF2D8438EF05503CE10528858A8F6C /* Pods-Hackathon2018_Client_RN-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E91E3B9C79F122EDF0B4794DDF1BF11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE6CA774C1E99F33B77D5AB581B02BF /* Pods-Hackathon2018_Client_RN.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -874,11 +777,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		281E12CA14264E9EF97A7D44A1255F81 /* Build configuration list for PBXNativeTarget "Pods-Hackathon2018_Client_RNTests" */ = {
+		23834509FAD5A4959E82B679D4851DDE /* Build configuration list for PBXNativeTarget "Pods-Hackathon2018_Client_RN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F97709DA879A46674683696AF0DA73F /* Debug */,
-				7BD8697F2A623E2818BE1EEA3252D579 /* Release */,
+				E91E3B9C79F122EDF0B4794DDF1BF11B /* Debug */,
+				145A6946BC6AB468B9E3A8568810C0BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AED0DBBECFA1584E9120C8974BA0EB3 /* Build configuration list for PBXNativeTarget "Pods-Hackathon2018_Client_RNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D2E62A705F874716ABE53CDCF1C19CE /* Debug */,
+				6A5F0FAB8DC90781CC81BDCA39B28C21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -897,15 +809,6 @@
 			buildConfigurations = (
 				BFE9493A65F8D41C624338D0453246BA /* Debug */,
 				1B4FF6F46FBE6530465929CEA13DC6FD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B36C28896348948CC21A416B8B5A4378 /* Build configuration list for PBXNativeTarget "Pods-Hackathon2018_Client_RN" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B84BA4BB034C76224C4774186A123C4E /* Debug */,
-				96572F8B936B2A33CD96B478EF544821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
