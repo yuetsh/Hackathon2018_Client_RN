@@ -14,8 +14,9 @@ export default StyleSheet.create({
     backgroundColor: '#9f9f9f',
     borderRadius: borderRadius
   },
-  textWrapper: {
+  text: {
     textAlign: 'center',
-    paddingTop: 8
+    paddingTop: 8,
+    fontSize: 20
   }
 })

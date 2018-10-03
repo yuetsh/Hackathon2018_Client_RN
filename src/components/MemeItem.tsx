@@ -14,10 +14,8 @@ class MemeItem extends React.Component<MemeItemProps> {
         onPress={() => this.props.navigation.push('Editing')}
       >
         <View style={styles.container}>
-          <View style={styles.templateWrapper}>
-            <Text>Gif Template</Text>
-          </View>
-          <Text style={styles.textWrapper}>{this.props.item}</Text>
+          <View style={styles.templateWrapper} />
+          <Text style={styles.text}>{this.props.item}</Text>
         </View>
       </TouchableWithoutFeedback>
     )
