@@ -58,4 +58,4 @@ buck-out/
 
 # App Center
 android/app/src/main/assets/appcenter-config.json
-ios/Hackathon2018_Client/AppCenter-Config.plist
+ios/Hackathon2018_Client_RN/AppCenter-Config.plist
