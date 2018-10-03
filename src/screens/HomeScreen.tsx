@@ -44,15 +44,17 @@ class HomeScreen extends React.Component<HomeScreenProps> {
 
   public render () {
     return (
-      <>'        \' \' \' '<Loading />' '<FlatList
-        data={this.state.data}
-        renderItem={this.renderItem}
-        keyExtractor={this.keyExtractor}
-        ItemSeparatorComponent={this.renderSeparator}
-        ListHeaderComponent={this.renderHeader}
-        ListFooterComponent={this.renderFooter}
-      />' '
-      </>
+      <React.Fragment>
+        <Loading />
+        <FlatList
+          data={this.state.data}
+          renderItem={this.renderItem}
+          keyExtractor={this.keyExtractor}
+          ItemSeparatorComponent={this.renderSeparator}
+          ListHeaderComponent={this.renderHeader}
+          ListFooterComponent={this.renderFooter}
+        />
+      </React.Fragment>
     )
   }
 }
