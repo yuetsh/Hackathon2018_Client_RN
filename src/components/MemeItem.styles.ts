@@ -1,25 +1,21 @@
 import { StyleSheet } from 'react-native'
 
+const borderRadius = 12
+
 export default StyleSheet.create({
   container: {
-    height: 160,
-    borderRadius: 4,
-    paddingHorizontal: 16
+    paddingHorizontal: 16,
+    paddingBottom: 12
   },
   templateWrapper: {
-    height: 124,
+    height: 200,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#9f9f9f',
-    borderTopLeftRadius: 4,
-    borderTopRightRadius: 4
+    borderRadius: borderRadius
   },
   textWrapper: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#4f4f4f',
-    borderBottomLeftRadius: 4,
-    borderBottomRightRadius: 4
+    textAlign: 'center',
+    paddingTop: 8
   }
 })

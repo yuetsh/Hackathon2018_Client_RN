@@ -8,6 +8,7 @@ class EditingScreen extends React.Component<EditingScreenProps> {
   static navigationOptions = {
     title: 'Editing'
   }
+
   render () {
     return (
       <View>
