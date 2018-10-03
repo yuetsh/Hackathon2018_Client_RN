@@ -1,0 +1,6 @@
+framework module Pods_Hackathon2018_Client_RN {
+  umbrella header "Pods-Hackathon2018_Client_RN-umbrella.h"
+
+  export *
+  module * { export * }
+}
