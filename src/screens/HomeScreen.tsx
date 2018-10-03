@@ -1,59 +1,58 @@
 import React from 'react'
-import { View, Button, FlatList, Platform, Text } from 'react-native'
+import { FlatList, View } from 'react-native'
 import { NavigationScreenProps } from 'react-navigation'
+import Loading from '../components/Loading'
 import MemeItem from '../components/MemeItem'
-import styles from './HomeScreen.styles'
-import { listMemes } from '../services/request'
 import i18n from '../services/i18n'
+import { listMemes } from '../services/request'
+import styles from './HomeScreen.styles'
 
 interface HomeScreenProps extends NavigationScreenProps {}
 
 class HomeScreen extends React.Component<HomeScreenProps> {
-  readonly state = {
+  public static navigationOptions = {
+    title: i18n.t('home_title')
+  }
+  public readonly state = {
     data: []
   }
-  static navigationOptions = {
-    title: i18n.t('home_title'),
-    headerRight: (
-      <Button onPress={() => alert('This is a button!')} title='Info' />
-    )
-  }
 
-  async componentDidMount () {
+  public async componentDidMount () {
     const data = await listMemes()
     this.setState({ data })
   }
 
-  renderItem = (res: any) => {
+  public renderItem = (res: any) => {
     return <MemeItem item={res.item} />
   }
 
-  keyExtractor = (_: any, index: number) => {
+  public keyExtractor = (_: any, index: number) => {
     return '' + index
   }
 
-  renderSeparator = () => {
+  public renderSeparator = () => {
     return <View style={styles.separator} />
   }
 
-  renderHeader = () => {
+  public renderHeader = () => {
     return <View style={styles.listHeader} />
   }
 
-  renderFooter = () => {
+  public renderFooter = () => {
     return <View style={styles.listFooter} />
   }
 
-  render () {
+  public render () {
     return (
-      <FlatList
+      <>'        \' \' \' '<Loading />' '<FlatList
         data={this.state.data}
         renderItem={this.renderItem}
         keyExtractor={this.keyExtractor}
         ItemSeparatorComponent={this.renderSeparator}
         ListHeaderComponent={this.renderHeader}
         ListFooterComponent={this.renderFooter}
-      />
+      />' '
+      </>
     )
   }
 }

@@ -1,10 +1,10 @@
 declare module 'react-navigation-fluid-transitions' {
+  import React from 'react'
   import {
     NavigationContainer,
     NavigationRouteConfigMap,
     StackNavigatorConfig
   } from 'react-navigation'
-  import React from 'react'
 
   export function createFluidNavigator(
     routeConfigMap: NavigationRouteConfigMap,

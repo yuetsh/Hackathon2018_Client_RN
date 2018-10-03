@@ -12,7 +12,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#9f9f9f',
-    borderRadius: borderRadius
+    borderRadius
   },
   text: {
     textAlign: 'center',

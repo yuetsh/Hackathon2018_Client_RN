@@ -1,18 +1,20 @@
 import React from 'react'
-import { View, Text, TouchableWithoutFeedback } from 'react-native'
+import { Text, TouchableWithoutFeedback, View } from 'react-native'
+import { NavigationScreenProps, withNavigation } from 'react-navigation'
 import styles from './MemeItem.styles'
-import { withNavigation, NavigationScreenProps } from 'react-navigation'
 
 interface MemeItemProps extends NavigationScreenProps {
   item: any
 }
 
 class MemeItem extends React.Component<MemeItemProps> {
-  render () {
+  public onPress = () => {
+    this.props.navigation.navigate('Editing')
+  }
+
+  public render () {
     return (
-      <TouchableWithoutFeedback
-        onPress={() => this.props.navigation.push('Editing')}
-      >
+      <TouchableWithoutFeedback onPress={this.onPress}>
         <View style={styles.container}>
           <View style={styles.templateWrapper} />
           <Text style={styles.text}>{this.props.item}</Text>

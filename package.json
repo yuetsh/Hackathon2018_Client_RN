@@ -9,6 +9,7 @@
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "format": "prettier-standard 'src/**/*.{ts,tsx}'",
+    "lint": "tslint -c tslint.json --fix 'src/**/*.{ts,tsx}'",
     "test": "jest"
   },
   "husky": {
@@ -18,7 +19,8 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
-      "prettier-standard",
+      "yarn lint",
+      "yarn format",
       "git add"
     ]
   },
@@ -51,6 +53,8 @@
     "react-native-typescript-transformer": "^1.2.10",
     "react-test-renderer": "16.5.0",
     "ts-jest": "^23.10.3",
+    "tslint": "^5.11.0",
+    "tslint-react": "^3.6.0",
     "typescript": "^3.1.1"
   },
   "jest": {

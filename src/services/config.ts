@@ -7,4 +7,4 @@ const config = {
   }
 }
 
-export default config['prod']
+export default config.prod

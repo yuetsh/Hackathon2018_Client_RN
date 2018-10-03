@@ -1,8 +1,8 @@
 import React from 'react'
-import HomeScreen from './screens/HomeScreen'
-import EditingScreen from './screens/EditingScreen'
-import { createStackNavigator } from 'react-navigation'
 import RNLanguages from 'react-native-languages'
+import { createStackNavigator } from 'react-navigation'
+import EditingScreen from './screens/EditingScreen'
+import HomeScreen from './screens/HomeScreen'
 import i18n from './services/i18n'
 
 const Navigator = createStackNavigator(
@@ -20,19 +20,19 @@ const Navigator = createStackNavigator(
 )
 
 export default class App extends React.Component {
-  componentDidMount () {
+  public componentDidMount () {
     RNLanguages.addEventListener('change', this.onLanguagesChange)
   }
 
-  componentWillUnmount () {
+  public componentWillUnmount () {
     RNLanguages.removeEventListener('change', this.onLanguagesChange)
   }
 
-  onLanguagesChange = ({ language }: { language: string }) => {
+  public onLanguagesChange = ({ language }: { language: string }) => {
     i18n.locale = language
   }
 
-  render () {
+  public render () {
     return <Navigator />
   }
 }
