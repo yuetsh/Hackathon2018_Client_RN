@@ -110,12 +110,10 @@ android {
 
     signingConfigs {
         release {
-            if (project.hasProperty('ZHENXIANG_RELEASE_STORE_FILE')) {
-                storeFile file(ZHENXIANG_RELEASE_STORE_FILE)
-                storePassword ZHENXIANG_RELEASE_STORE_PASSWORD
-                keyAlias ZHENXIANG_RELEASE_KEY_ALIAS
-                keyPassword ZHENXIANG_RELEASE_KEY_PASSWORD
-            }
+            storeFile rootProject.file("zhenxiang-release-key.keystore")
+            storePassword System.getProperty("APPCENTER_KEYSTORE_PASSWORD")
+            keyAlias System.getProperty("APPCENTER_KEY_ALIAS")
+            keyPassword System.getProperty("APPCENTER_KEY_PASSWORD")
         }
     }
 
