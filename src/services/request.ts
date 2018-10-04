@@ -1,7 +1,9 @@
 import config from './config'
 
+const API_URL = config.host + config.prefix
+
 export async function listMemes (): Promise<string[]> {
-  const res = await fetch(config.host + 'memes')
+  const res = await fetch(API_URL + 'memes')
   const json = await res.json()
   return json.data
 }
@@ -9,10 +11,10 @@ export async function listMemes (): Promise<string[]> {
 interface CreateMemeBody {
   name: string
   subs: string[]
-  format?: 'gif' | 'mp4'
 }
+
 export async function createMeme (body: CreateMemeBody) {
-  const res = await fetch(config.host + 'meme', {
+  const res = await fetch(API_URL + 'meme', {
     method: 'post',
     body: JSON.stringify(body)
   })

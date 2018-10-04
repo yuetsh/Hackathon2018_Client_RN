@@ -1,3 +1,7 @@
+const baseConfig = {
+  prefix: 'zhenxiang/v1/'
+}
+
 const config = {
   dev: {
     host: 'http://localhost:3010/'
@@ -7,4 +11,4 @@ const config = {
   }
 }
 
-export default config.prod
+export default Object.assign(config.prod, baseConfig)
