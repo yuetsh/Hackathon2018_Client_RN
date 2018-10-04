@@ -1,4 +1,6 @@
 rootProject.name = 'Hackathon2018_Client_RN'
+include ':react-native-code-push'
+project(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push/android/app')
 include ':react-native-languages'
 project(':react-native-languages').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-languages/android')
 include ':appcenter-crashes'

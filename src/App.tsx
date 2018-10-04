@@ -4,6 +4,7 @@ import { createStackNavigator } from 'react-navigation'
 import EditingScreen from './screens/EditingScreen'
 import HomeScreen from './screens/HomeScreen'
 import i18n from './services/i18n'
+import codePush from 'react-native-code-push'
 
 const Navigator = createStackNavigator(
   {
@@ -20,8 +21,14 @@ const Navigator = createStackNavigator(
 )
 
 export default class App extends React.Component {
-  public componentDidMount () {
+  public async componentDidMount () {
     RNLanguages.addEventListener('change', this.onLanguagesChange)
+    await codePush.sync({
+      updateDialog: {
+        title: 'Update available'
+      },
+      installMode: codePush.InstallMode.IMMEDIATE
+    })
   }
 
   public componentWillUnmount () {

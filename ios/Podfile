@@ -11,6 +11,8 @@ target 'Hackathon2018_Client_RN' do
   pod 'AppCenter/Analytics', '~> 1.9.0'
   pod 'AppCenterReactNativeShared', '~> 1.8.1'
 
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+
   target 'Hackathon2018_Client_RNTests' do
     inherit! :search_paths
     # Pods for testing
