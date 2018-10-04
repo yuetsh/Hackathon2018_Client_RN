@@ -110,10 +110,10 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("app/zhenxiang-release-key.keystore")
-            storePassword APPCENTER_KEYSTORE_PASSWORD
-            keyAlias APPCENTER_KEY_ALIAS
-            keyPassword APPCENTER_KEY_PASSWORD
+            storeFile rootProject.file("app/zhenxiang-release-key.keystore")
+            storePassword System.getenv("APPCENTER_KEYSTORE_PASSWORD")
+            keyAlias System.getenv("APPCENTER_KEY_ALIAS")
+            keyPassword System.getenv("APPCENTER_KEY_PASSWORD")
         }
     }
 
