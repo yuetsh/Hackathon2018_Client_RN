@@ -1,17 +1,25 @@
 import React from 'react'
-import { FlatList, View } from 'react-native'
+import { Button, FlatList, View } from 'react-native'
 import { NavigationScreenProps } from 'react-navigation'
 import Loading from '../components/Loading'
 import MemeItem from '../components/MemeItem'
 import i18n from '../services/i18n'
 import { listMemes } from '../services/request'
 import styles from './HomeScreen.styles'
+import codePush from 'react-native-code-push'
 
 interface HomeScreenProps extends NavigationScreenProps {}
 
+async function onPressSetting () {
+  await codePush.sync({
+    installMode: codePush.InstallMode.IMMEDIATE
+  })
+}
+
 class HomeScreen extends React.Component<HomeScreenProps> {
   public static navigationOptions = {
-    title: i18n.t('home_title')
+    title: i18n.t('home_title'),
+    headerRight: <Button onPress={onPressSetting} title='Setting' />
   }
   public readonly state = {
     data: []
