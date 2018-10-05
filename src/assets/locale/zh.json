@@ -12,5 +12,6 @@
   "download_btn": "下载",
   "share_btn": "分享",
   "new_btn": "再做一个",
-  "home_btn": "返回列表"
+  "home_btn": "返回列表",
+  "fail_to_create": "创建失败..."
 }

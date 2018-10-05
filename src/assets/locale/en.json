@@ -12,5 +12,6 @@
   "download_btn": "Download",
   "share_btn": "Share",
   "new_btn": "New",
-  "home_btn": "Back to List"
+  "home_btn": "Back to List",
+  "fail_to_create": "Fail to create a meme..."
 }

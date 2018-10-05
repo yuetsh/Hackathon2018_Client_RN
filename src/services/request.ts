@@ -1,5 +1,6 @@
-import config from './config'
+import config from '../config'
 import { Alert } from 'react-native'
+import i18n from './i18n'
 
 const API_URL = config.host + config.prefix
 
@@ -42,6 +43,6 @@ export async function createMeme (
     const json = await res.json()
     return json.data
   } catch (e) {
-    Alert.alert('fail to create a meme...')
+    Alert.alert(i18n.t('fail_to_create' + e))
   }
 }
