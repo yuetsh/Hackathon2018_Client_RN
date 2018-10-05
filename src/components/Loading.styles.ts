@@ -31,8 +31,8 @@ export default StyleSheet.create({
     marginBottom: 100
   },
   inner: {
-    width: 180,
-    height: 180,
+    width: 200,
+    height: 200,
     alignItems: 'center',
     justifyContent: 'center'
   },
