@@ -11,7 +11,10 @@ interface MemeItemProps extends NavigationScreenProps {
 }
 
 const CachedImage = imageCacheHoc(Image, {
-  defaultPlaceholder: { component: Indicator, props: {} }
+  defaultPlaceholder: {
+    component: Indicator,
+    props: { style: { height: 200 } }
+  }
 })
 
 class MemeItem extends React.Component<MemeItemProps> {

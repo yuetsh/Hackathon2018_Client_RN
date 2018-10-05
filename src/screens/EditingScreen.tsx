@@ -6,7 +6,10 @@ import imageCacheHoc from 'react-native-image-cache-hoc'
 import Indicator from '../components/Indicator'
 
 const CachedImage = imageCacheHoc(Image, {
-  defaultPlaceholder: { component: Indicator, props: {} }
+  defaultPlaceholder: {
+    component: Indicator,
+    props: { style: { height: 200 } }
+  }
 })
 
 interface EditingScreenProps extends NavigationScreenProps {}
@@ -19,9 +22,8 @@ class EditingScreen extends React.Component<
   EditingScreenProps,
   EditingScreenState
   > {
-  public onPress = async () => {
+  public onPress = () => {
     this.props.navigation.navigate('Home')
-    await CachedImage.flush()
   }
 
   public render () {
