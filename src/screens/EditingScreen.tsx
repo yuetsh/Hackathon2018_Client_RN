@@ -29,6 +29,7 @@ class EditingScreen extends React.Component<
   public render () {
     const { navigation } = this.props
     const gif = navigation.getParam('gif')
+    const placeholders = navigation.getParam('placeholders')
     return (
       <View style={styles.container}>
         <CachedImage
@@ -36,7 +37,13 @@ class EditingScreen extends React.Component<
           style={{ alignSelf: 'stretch', height: 200 }}
           borderRadius={12}
         />
-        <TextInput />
+        <View>
+          {placeholders.map((text: string, index: number) => (
+            <View key={index}>
+              <TextInput placeholder={text} />
+            </View>
+          ))}
+        </View>
         <Button title='Home' onPress={this.onPress} />
       </View>
     )

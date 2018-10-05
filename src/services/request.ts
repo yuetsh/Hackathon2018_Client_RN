@@ -6,7 +6,8 @@ export interface Meme {
   name: string
   name_en: string
   cover: string
-  gif?: string
+  gif: string
+  placeholders: string[]
 }
 
 export async function listMemes (): Promise<Meme[]> {

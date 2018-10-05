@@ -5,6 +5,7 @@ import styles from './MemeItem.styles'
 import { Meme } from '../services/request'
 import imageCacheHoc from 'react-native-image-cache-hoc'
 import Indicator from './Indicator'
+import i18n from '../services/i18n'
 
 interface MemeItemProps extends NavigationScreenProps {
   item: Meme
@@ -34,7 +35,7 @@ class MemeItem extends React.Component<MemeItemProps> {
             borderRadius={12}
             style={{ alignSelf: 'stretch', height: 200 }}
           />
-          <Text style={styles.text}>{item.name}</Text>
+          <Text style={styles.text}>{i18n.t(item.name)}</Text>
         </View>
       </TouchableWithoutFeedback>
     )
