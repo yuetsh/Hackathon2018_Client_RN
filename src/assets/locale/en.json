@@ -7,6 +7,7 @@
   "sorry": "Sorry",
   "line": "Subs %{num}",
   "editing_btn": "Generate",
+  "clear_subs_btn": "Clear All",
   "alert_title": "Finish all subs!",
   "display_title": "Display",
   "download_btn": "Download",

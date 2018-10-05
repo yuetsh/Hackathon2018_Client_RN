@@ -12,7 +12,8 @@ interface LoadingProps {
 class Loading extends React.Component<LoadingProps> {
   static defaultProps = {
     visible: true,
-    mode: 'fullscreen'
+    mode: 'fullscreen',
+    title: ''
   }
 
   sizeValue = new Animated.Value(0)

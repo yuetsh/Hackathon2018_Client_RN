@@ -1,22 +1,14 @@
 import React from 'react'
-import { Text, TouchableWithoutFeedback, View, Image } from 'react-native'
+import { Text, TouchableWithoutFeedback, View } from 'react-native'
 import { NavigationScreenProps, withNavigation } from 'react-navigation'
 import styles from './MemeItem.styles'
 import { Meme } from '../services/request'
-import imageCacheHoc from 'react-native-image-cache-hoc'
-import Indicator from './Indicator'
 import i18n from '../services/i18n'
+import CachedImage from './CachedImage'
 
 interface MemeItemProps extends NavigationScreenProps {
   item: Meme
 }
-
-const CachedImage = imageCacheHoc(Image, {
-  defaultPlaceholder: {
-    component: Indicator,
-    props: { style: { height: 200 } }
-  }
-})
 
 class MemeItem extends React.Component<MemeItemProps> {
   public onPress = () => {

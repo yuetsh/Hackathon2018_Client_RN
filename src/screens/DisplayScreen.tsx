@@ -1,20 +1,19 @@
 import React from 'react'
-import { Button, Image, Text, View } from 'react-native'
+import { Button, Platform, Text, View, Image } from 'react-native'
 import styles from './DisplayScreen.styles'
-import imageCacheHoc from 'react-native-image-cache-hoc'
-import Indicator from '../components/Indicator'
 import { NavigationScreenProps } from 'react-navigation'
 import i18n from '../services/i18n'
-
-const CachedImage = imageCacheHoc(Image, {
-  defaultPlaceholder: {
-    component: Indicator,
-    props: { style: { height: 200 } }
-  }
-})
+import RNFetchBlob from 'rn-fetch-blob'
+import CachedImage from '../components/CachedImage'
 
 class DisplayScreen extends React.Component<NavigationScreenProps> {
-  download = () => {}
+  download = async () => {
+    const type = this.props.navigation.getParam('type')
+    const path = this.props.navigation.getParam('localFilePath')
+    Platform.OS === 'ios'
+      ? RNFetchBlob.ios.openDocument(path)
+      : RNFetchBlob.android.actionViewIntent(path, type)
+  }
 
   share = () => {}
 
@@ -29,12 +28,14 @@ class DisplayScreen extends React.Component<NavigationScreenProps> {
   render () {
     const { navigation } = this.props
     const link = navigation.getParam('link')
+    const path = navigation.getParam('localFilePath')
     return (
       <View style={styles.container}>
-        <CachedImage
-          source={{ uri: link }}
-          style={{ alignSelf: 'stretch', height: 200, marginHorizontal: 16 }}
+        <Image
+          source={{ uri: 'file://' + path }}
+          resizeMode='cover'
           borderRadius={12}
+          style={{ alignSelf: 'stretch', height: 200, marginHorizontal: 16 }}
         />
         <View style={styles.btnsWrapper}>
           <Text style={styles.text}>{link}</Text>
