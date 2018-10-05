@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native'
+import { Color, Size } from '../services/uikit'
 
 export default StyleSheet.create({
   container: {
@@ -8,10 +9,11 @@ export default StyleSheet.create({
     paddingBottom: 100
   },
   paneContainer: {
-    flex: 1,
+    width: Size.DeviceWidth,
+    height: Size.DeviceHeight,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(15, 15, 15, 0.6)',
+    backgroundColor: Color.Mask,
     position: 'absolute',
     top: 0,
     left: 0,
@@ -22,7 +24,7 @@ export default StyleSheet.create({
   pane: {
     width: 240,
     height: 240,
-    backgroundColor: '#fff',
+    backgroundColor: Color.White,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 20,
@@ -36,6 +38,6 @@ export default StyleSheet.create({
   },
   text: {
     fontSize: 16,
-    color: '#333'
+    color: Color.InputText
   }
 })

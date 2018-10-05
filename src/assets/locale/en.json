@@ -3,6 +3,14 @@
   "home_title": "Home",
   "editing_title": "Editing",
   "loading_text": "Big brother is watching you...",
-  "真香": "Wow, It tastes good",
-  "有钱可以为所欲为": "Rich Men Can Do Anything He Wants"
+  "zhenxiang": "Wow, It tastes good",
+  "sorry": "Sorry",
+  "line": "Subs %{num}",
+  "editing_btn": "Generate",
+  "alert_title": "Finish all subs!",
+  "display_title": "Display",
+  "download_btn": "Download",
+  "share_btn": "Share",
+  "new_btn": "New",
+  "home_btn": "Back to List"
 }

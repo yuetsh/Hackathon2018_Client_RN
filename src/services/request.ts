@@ -1,4 +1,5 @@
 import config from './config'
+import { Alert } from 'react-native'
 
 const API_URL = config.host + config.prefix
 
@@ -21,10 +22,26 @@ interface CreateMemeBody {
   subs: string[]
 }
 
-export async function createMeme (body: CreateMemeBody) {
-  const res = await fetch(API_URL + 'meme', {
-    method: 'post',
-    body: JSON.stringify(body)
-  })
-  console.log(res)
+interface NewMeme {
+  id: string
+  link: string
+  name: string
+  width: number
+  height: number
+  type: 'images/gif'
+}
+
+export async function createMeme (
+  body: CreateMemeBody
+): Promise<NewMeme | void> {
+  try {
+    const res = await fetch(API_URL + 'meme', {
+      method: 'post',
+      body: JSON.stringify(body)
+    })
+    const json = await res.json()
+    return json.data
+  } catch (e) {
+    Alert.alert('fail to create a meme...')
+  }
 }

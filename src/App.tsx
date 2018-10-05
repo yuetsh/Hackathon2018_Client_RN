@@ -2,27 +2,24 @@ import React from 'react'
 import RNLanguages from 'react-native-languages'
 import { createStackNavigator } from 'react-navigation'
 import EditingScreen from './screens/EditingScreen'
+import DisplayScreen from './screens/DisplayScreen'
 import HomeScreen from './screens/HomeScreen'
 import i18n from './services/i18n'
 import { SafeAreaView } from 'react-native'
+import { Color } from './services/uikit'
 
-const Navigator = createStackNavigator(
+const MainStack = createStackNavigator(
   {
     Home: HomeScreen,
-    Editing: {
-      path: 'editing/:name',
-      screen: EditingScreen
-    }
+    Editing: EditingScreen,
+    Display: DisplayScreen
   },
   {
     mode: 'card',
-    cardStyle: {
-      backgroundColor: '#fff'
-    },
     headerMode: 'none',
     initialRouteName: 'Home',
-    navigationOptions: {
-      gesturesEnabled: true
+    cardStyle: {
+      backgroundColor: Color.White
     }
   }
 )
@@ -43,7 +40,7 @@ export default class App extends React.Component {
   public render () {
     return (
       <SafeAreaView style={{ flex: 1 }}>
-        <Navigator />
+        <MainStack />
       </SafeAreaView>
     )
   }
