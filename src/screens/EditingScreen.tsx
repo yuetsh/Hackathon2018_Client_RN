@@ -1,13 +1,29 @@
 import React from 'react'
-import { Button, Text, View } from 'react-native'
+import { Button, TextInput, View } from 'react-native'
 import { NavigationScreenProps } from 'react-navigation'
-import i18n from '../services/i18n'
+import styles from './EditingScreen.styles'
+import Image from 'react-native-image-progress'
+import { Bar, Circle, CircleSnail, Pie } from 'react-native-progress'
+
+const indicators = [Bar, Pie, Circle, CircleSnail]
 
 interface EditingScreenProps extends NavigationScreenProps {}
 
-class EditingScreen extends React.Component<EditingScreenProps> {
-  public static navigationOptions = {
-    title: i18n.t('editing_title')
+interface EditingScreenState {
+  indicator: React.ComponentClass
+}
+
+class EditingScreen extends React.Component<
+  EditingScreenProps,
+  EditingScreenState
+  > {
+  readonly state = {
+    indicator: Bar
+  }
+
+  componentDidMount () {
+    const indicator = indicators[Math.floor(Math.random() * indicators.length)]
+    this.setState({ indicator })
   }
 
   public onPress = () => {
@@ -15,10 +31,18 @@ class EditingScreen extends React.Component<EditingScreenProps> {
   }
 
   public render () {
+    const { navigation } = this.props
+    const gif = navigation.getParam('gif')
     return (
-      <View>
-        <Text>Editing</Text>
-        <Button title='Go to Home' onPress={this.onPress} />
+      <View style={styles.container}>
+        <Image
+          source={{ uri: gif }}
+          indicator={this.state.indicator}
+          style={{ alignSelf: 'stretch', height: 200 }}
+          borderRadius={12}
+        />
+        <TextInput />
+        <Button title='Home' onPress={this.onPress} />
       </View>
     )
   }

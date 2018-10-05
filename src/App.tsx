@@ -4,14 +4,22 @@ import { createStackNavigator } from 'react-navigation'
 import EditingScreen from './screens/EditingScreen'
 import HomeScreen from './screens/HomeScreen'
 import i18n from './services/i18n'
+import { SafeAreaView } from 'react-native'
 
 const Navigator = createStackNavigator(
   {
     Home: HomeScreen,
-    Editing: EditingScreen
+    Editing: {
+      path: 'editing/:name',
+      screen: EditingScreen
+    }
   },
   {
-    headerMode: 'float',
+    mode: 'card',
+    cardStyle: {
+      backgroundColor: '#fff'
+    },
+    headerMode: 'none',
     initialRouteName: 'Home',
     navigationOptions: {
       gesturesEnabled: true
@@ -33,6 +41,10 @@ export default class App extends React.Component {
   }
 
   public render () {
-    return <Navigator />
+    return (
+      <SafeAreaView style={{ flex: 1 }}>
+        <Navigator />
+      </SafeAreaView>
+    )
   }
 }
