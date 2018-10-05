@@ -3,11 +3,10 @@ import { FlatList, View } from 'react-native'
 import { NavigationScreenProps } from 'react-navigation'
 import MemeItem from '../components/MemeItem'
 import styles from './HomeScreen.styles'
-import { HomeAsset, HomeAssets } from '../services/uikit'
+import { listMemes, Meme } from '../services/request'
+import Loading from '../components/Loading'
 
 // import codePush from 'react-native-code-push'
-
-interface HomeScreenProps extends NavigationScreenProps {}
 
 // async function onPressSetting() {
 //     await codePush.sync({
@@ -15,8 +14,17 @@ interface HomeScreenProps extends NavigationScreenProps {}
 //     })
 // }
 
-class HomeScreen extends React.Component<HomeScreenProps> {
-  public renderItem = ({ item }: { item: HomeAsset }) => {
+class HomeScreen extends React.Component<NavigationScreenProps> {
+  readonly state = {
+    data: []
+  }
+
+  async componentDidMount () {
+    const data = await listMemes()
+    this.setState({ data })
+  }
+
+  public renderItem = ({ item }: { item: Meme }) => {
     return <MemeItem item={item} />
   }
 
@@ -29,9 +37,12 @@ class HomeScreen extends React.Component<HomeScreenProps> {
   }
 
   public render () {
+    if (!this.state.data.length) {
+      return <Loading mode='fullscreen' />
+    }
     return (
       <FlatList
-        data={HomeAssets}
+        data={this.state.data}
         renderItem={this.renderItem}
         keyExtractor={this.keyExtractor}
         ItemSeparatorComponent={this.renderSeparator}

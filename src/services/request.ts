@@ -2,7 +2,14 @@ import config from './config'
 
 const API_URL = config.host + config.prefix
 
-export async function listMemes (): Promise<string[]> {
+export interface Meme {
+  name: string
+  name_en: string
+  cover: string
+  gif?: string
+}
+
+export async function listMemes (): Promise<Meme[]> {
   const res = await fetch(API_URL + 'memes')
   const json = await res.json()
   return json.data

@@ -1,15 +1,18 @@
 import React from 'react'
-import { Animated, Easing, Image, View } from 'react-native'
+import { Animated, Easing, View, Text } from 'react-native'
 import { AssetImage } from '../services/uikit'
 import styles from './Loading.styles'
+import i18n from '../services/i18n'
 
 interface LoadingProps {
   visible: boolean
+  mode: 'fullscreen' | 'pane'
 }
 
 class Loading extends React.Component<LoadingProps> {
   static defaultProps = {
-    visible: true
+    visible: true,
+    mode: 'fullscreen'
   }
 
   sizeValue = new Animated.Value(0)
@@ -48,7 +51,7 @@ class Loading extends React.Component<LoadingProps> {
     })
     const size = this.sizeValue.interpolate({
       inputRange: [0, 1],
-      outputRange: [30, 40]
+      outputRange: [100, 140]
     })
     const imageStyle = {
       transform: [{ rotate: spin }],
@@ -56,9 +59,24 @@ class Loading extends React.Component<LoadingProps> {
       height: size,
       borderRadius: 20
     }
+    if (this.props.mode === 'pane') {
+      return (
+        <View style={styles.paneContainer}>
+          <View style={styles.pane}>
+            <View style={styles.inner}>
+              <Animated.Image style={imageStyle} source={AssetImage.Loading} />
+            </View>
+            <Text style={styles.text}>{i18n.t('loading_text')}</Text>
+          </View>
+        </View>
+      )
+    }
     return (
       <View style={styles.container}>
-        <Animated.Image style={imageStyle} source={AssetImage.Loading} />
+        <View style={styles.inner}>
+          <Animated.Image style={imageStyle} source={AssetImage.Loading} />
+        </View>
+        <Text style={styles.text}>{i18n.t('loading_text')}</Text>
       </View>
     )
   }
