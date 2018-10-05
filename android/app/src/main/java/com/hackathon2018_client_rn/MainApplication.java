@@ -3,6 +3,7 @@ package com.hackathon2018_client_rn;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.RNFetchBlob.RNFetchBlobPackage;
 import com.microsoft.codepush.react.CodePush;
 import com.reactcommunity.rnlanguages.RNLanguagesPackage;
 import com.microsoft.appcenter.reactnative.crashes.AppCenterReactNativeCrashesPackage;
@@ -34,6 +35,7 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
+                    new RNFetchBlobPackage(),
                     new CodePush("iZ1kxqzfa1XlX9nbIRJbWffjRcR6SyANh8Qc7", getApplicationContext(), BuildConfig.DEBUG),
                     new RNLanguagesPackage(),
                     new AppCenterReactNativeCrashesPackage(MainApplication.this, getResources().getString(R.string.appCenterCrashes_whenToSendCrashes)),

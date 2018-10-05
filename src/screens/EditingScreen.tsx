@@ -1,11 +1,13 @@
 import React from 'react'
-import { Button, TextInput, View } from 'react-native'
+import { Button, TextInput, View, Image } from 'react-native'
 import { NavigationScreenProps } from 'react-navigation'
 import styles from './EditingScreen.styles'
-import Image from 'react-native-image-progress'
-import { Bar, Circle, CircleSnail, Pie } from 'react-native-progress'
+import imageCacheHoc from 'react-native-image-cache-hoc'
+import Indicator from '../components/Indicator'
 
-const indicators = [Bar, Pie, Circle, CircleSnail]
+const CachedImage = imageCacheHoc(Image, {
+  defaultPlaceholder: { component: Indicator, props: {} }
+})
 
 interface EditingScreenProps extends NavigationScreenProps {}
 
@@ -17,17 +19,9 @@ class EditingScreen extends React.Component<
   EditingScreenProps,
   EditingScreenState
   > {
-  readonly state = {
-    indicator: Bar
-  }
-
-  componentDidMount () {
-    const indicator = indicators[Math.floor(Math.random() * indicators.length)]
-    this.setState({ indicator })
-  }
-
-  public onPress = () => {
+  public onPress = async () => {
     this.props.navigation.navigate('Home')
+    await CachedImage.flush()
   }
 
   public render () {
@@ -35,9 +29,8 @@ class EditingScreen extends React.Component<
     const gif = navigation.getParam('gif')
     return (
       <View style={styles.container}>
-        <Image
+        <CachedImage
           source={{ uri: gif }}
-          indicator={this.state.indicator}
           style={{ alignSelf: 'stretch', height: 200 }}
           borderRadius={12}
         />

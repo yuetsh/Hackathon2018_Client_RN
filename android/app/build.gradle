@@ -138,6 +138,7 @@ android {
 }
 
 dependencies {
+    compile project(':rn-fetch-blob')
     compile project(':react-native-code-push')
     compile project(':react-native-languages')
     compile project(':appcenter-crashes')

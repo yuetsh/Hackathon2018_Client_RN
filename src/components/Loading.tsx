@@ -6,7 +6,7 @@ import i18n from '../services/i18n'
 
 interface LoadingProps {
   visible: boolean
-  mode: 'fullscreen' | 'pane'
+  mode: 'fullscreen' | 'modal' | 'inner'
 }
 
 class Loading extends React.Component<LoadingProps> {
@@ -59,7 +59,13 @@ class Loading extends React.Component<LoadingProps> {
       height: size,
       borderRadius: 20
     }
-    if (this.props.mode === 'pane') {
+    if (this.props.mode === 'inner') {
+      return (
+        <View style={styles.inner}>
+          <Animated.Image style={imageStyle} source={AssetImage.Loading} />
+        </View>
+      )
+    } else if (this.props.mode === 'modal') {
       return (
         <View style={styles.paneContainer}>
           <View style={styles.pane}>
@@ -70,15 +76,16 @@ class Loading extends React.Component<LoadingProps> {
           </View>
         </View>
       )
-    }
-    return (
-      <View style={styles.container}>
-        <View style={styles.inner}>
-          <Animated.Image style={imageStyle} source={AssetImage.Loading} />
+    } else {
+      return (
+        <View style={styles.container}>
+          <View style={styles.inner}>
+            <Animated.Image style={imageStyle} source={AssetImage.Loading} />
+          </View>
+          <Text style={styles.text}>{i18n.t('loading_text')}</Text>
         </View>
-        <Text style={styles.text}>{i18n.t('loading_text')}</Text>
-      </View>
-    )
+      )
+    }
   }
 }
 
