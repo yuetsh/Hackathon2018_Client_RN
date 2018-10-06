@@ -5,6 +5,7 @@ import MemeItem from '../components/MemeItem'
 import styles from './HomeScreen.styles'
 import { listMemes, Meme } from '../services/request'
 import Loading from '../components/Loading'
+import i18n from '../services/i18n'
 
 // import codePush from 'react-native-code-push'
 
@@ -15,6 +16,9 @@ import Loading from '../components/Loading'
 // }
 
 class HomeScreen extends React.Component<NavigationScreenProps> {
+  static navigationOptions = {
+    title: i18n.t('home_title')
+  }
   readonly state = {
     data: []
   }
@@ -24,19 +28,19 @@ class HomeScreen extends React.Component<NavigationScreenProps> {
     this.setState({ data })
   }
 
-  public renderItem = ({ item }: { item: Meme }) => {
+  renderItem = ({ item }: { item: Meme }) => {
     return <MemeItem item={item} />
   }
 
-  public keyExtractor = (_: any, index: number) => {
+  keyExtractor = (_: any, index: number) => {
     return '' + index
   }
 
-  public renderSeparator = () => {
+  renderSeparator = () => {
     return <View style={styles.separator} />
   }
 
-  public render () {
+  render () {
     if (!this.state.data.length) {
       return <Loading mode='fullscreen' />
     }

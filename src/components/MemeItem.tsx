@@ -11,12 +11,12 @@ interface MemeItemProps extends NavigationScreenProps {
 }
 
 class MemeItem extends React.Component<MemeItemProps> {
-  public onPress = () => {
+  onPress = () => {
     const { item } = this.props
     this.props.navigation.navigate('Editing', item)
   }
 
-  public render () {
+  render () {
     const { item } = this.props
     return (
       <TouchableWithoutFeedback onPress={this.onPress}>

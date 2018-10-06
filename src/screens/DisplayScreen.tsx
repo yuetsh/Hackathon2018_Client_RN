@@ -4,9 +4,11 @@ import styles from './DisplayScreen.styles'
 import { NavigationScreenProps } from 'react-navigation'
 import i18n from '../services/i18n'
 import RNFetchBlob from 'rn-fetch-blob'
-import CachedImage from '../components/CachedImage'
 
 class DisplayScreen extends React.Component<NavigationScreenProps> {
+  static navigationOptions = {
+    title: i18n.t('display_title')
+  }
   download = async () => {
     const type = this.props.navigation.getParam('type')
     const path = this.props.navigation.getParam('localFilePath')

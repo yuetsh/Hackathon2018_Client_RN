@@ -11,7 +11,7 @@ export default StyleSheet.create({
   },
   text: {
     alignSelf: 'center',
-    fontSize: 20,
-    marginBottom: 12
+    fontSize: 18,
+    marginBottom: 8
   }
 })

@@ -2,14 +2,14 @@ import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
   inputsContainer: {
-    marginTop: 20,
-    paddingHorizontal: 16
+    marginTop: 12,
+    paddingHorizontal: 8
   },
   inputWrapper: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    marginVertical: 10
+    marginBottom: 8
   },
   text: {
     fontSize: 18,

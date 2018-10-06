@@ -43,7 +43,7 @@ class Loading extends React.Component<LoadingProps> {
     ).start()
   }
 
-  public render () {
+  render () {
     if (!this.props.visible) return null
 
     const spin = this.spinValue.interpolate({

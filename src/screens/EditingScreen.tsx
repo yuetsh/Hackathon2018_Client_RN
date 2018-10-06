@@ -27,6 +27,9 @@ class EditingScreen extends React.Component<
   NavigationScreenProps,
   EditingScreenState
   > {
+  static navigationOptions = {
+    title: i18n.t('editing_title')
+  }
   readonly state = {
     loading: false,
     subs: new Array(this.props.navigation.getParam('placeholders').length).fill(
@@ -40,7 +43,7 @@ class EditingScreen extends React.Component<
     })
   }
 
-  public backToList = () => {
+  backToList = () => {
     this.props.navigation.popToTop()
   }
 
@@ -72,12 +75,12 @@ class EditingScreen extends React.Component<
     }
   }
 
-  public render () {
+  render () {
     const { navigation } = this.props
     const placeholders = this.props.navigation.getParam('placeholders')
     const gif = navigation.getParam('gif')
     return (
-      <KeyboardAvoidingView behavior='position'>
+      <KeyboardAvoidingView behavior='padding'>
         <ScrollView
           keyboardDismissMode='none'
           keyboardShouldPersistTaps='handled'

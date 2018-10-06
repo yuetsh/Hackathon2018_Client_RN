@@ -5,7 +5,7 @@ import EditingScreen from './screens/EditingScreen'
 import DisplayScreen from './screens/DisplayScreen'
 import HomeScreen from './screens/HomeScreen'
 import i18n from './services/i18n'
-import { SafeAreaView } from 'react-native'
+import { View, Platform, SafeAreaView } from 'react-native'
 import { Color } from './services/uikit'
 
 const MainStack = createStackNavigator(
@@ -16,8 +16,9 @@ const MainStack = createStackNavigator(
   },
   {
     mode: 'card',
-    headerMode: 'none',
+    headerMode: Platform.OS === 'ios' ? 'none' : 'float',
     initialRouteName: 'Home',
+    headerTransitionPreset: 'fade-in-place',
     cardStyle: {
       backgroundColor: Color.White
     }
@@ -25,23 +26,30 @@ const MainStack = createStackNavigator(
 )
 
 export default class App extends React.Component {
-  public componentDidMount () {
+  componentDidMount () {
     RNLanguages.addEventListener('change', this.onLanguagesChange)
   }
 
-  public componentWillUnmount () {
+  componentWillUnmount () {
     RNLanguages.removeEventListener('change', this.onLanguagesChange)
   }
 
-  public onLanguagesChange = ({ language }: { language: string }) => {
+  onLanguagesChange = ({ language }: { language: string }) => {
     i18n.locale = language
   }
 
-  public render () {
+  render () {
+    if (Platform.OS === 'ios') {
+      return (
+        <SafeAreaView style={{ flex: 1 }}>
+          <MainStack />
+        </SafeAreaView>
+      )
+    }
     return (
-      <SafeAreaView style={{ flex: 1 }}>
+      <View>
         <MainStack />
-      </SafeAreaView>
+      </View>
     )
   }
 }
