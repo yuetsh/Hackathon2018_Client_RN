@@ -45,11 +45,12 @@ export default class App extends React.Component {
           <MainStack />
         </SafeAreaView>
       )
+    } else {
+      return (
+        <View>
+          <MainStack />
+        </View>
+      )
     }
-    return (
-      <View>
-        <MainStack />
-      </View>
-    )
   }
 }
