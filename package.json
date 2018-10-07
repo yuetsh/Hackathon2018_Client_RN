@@ -35,6 +35,7 @@
     "react-native-code-push": "^5.4.2",
     "react-native-image-cache-hoc": "^1.5.0",
     "react-native-languages": "^3.0.0",
+    "react-native-splash-screen": "^3.1.1",
     "react-navigation": "^2.17.0",
     "rn-fetch-blob": "^0.10.13"
   },

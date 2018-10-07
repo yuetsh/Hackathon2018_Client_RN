@@ -1,5 +1,6 @@
 import React from 'react'
 import RNLanguages from 'react-native-languages'
+import SplashScreen from 'react-native-splash-screen'
 import { createStackNavigator } from 'react-navigation'
 import EditingScreen from './screens/EditingScreen'
 import DisplayScreen from './screens/DisplayScreen'
@@ -27,6 +28,7 @@ const MainStack = createStackNavigator(
 
 export default class App extends React.Component {
   componentDidMount () {
+    SplashScreen.hide()
     RNLanguages.addEventListener('change', this.onLanguagesChange)
   }
 
