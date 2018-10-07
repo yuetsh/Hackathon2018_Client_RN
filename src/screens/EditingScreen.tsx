@@ -17,6 +17,7 @@ import i18n from '../services/i18n'
 import Loading from '../components/Loading'
 import { createMeme } from '../services/request'
 import CachedImage from '../components/CachedImage'
+import { Size } from '../services/uikit'
 
 interface EditingScreenState {
   loading: boolean
@@ -80,16 +81,21 @@ class EditingScreen extends React.Component<
     const placeholders = this.props.navigation.getParam('placeholders')
     const gif = navigation.getParam('gif')
     return (
-      <KeyboardAvoidingView behavior='padding'>
+      <KeyboardAvoidingView behavior='position'>
         <ScrollView
-          keyboardDismissMode='none'
+          contentContainerStyle={styles.container}
+          keyboardDismissMode='interactive'
           keyboardShouldPersistTaps='handled'
           showsVerticalScrollIndicator={false}
         >
           <CachedImage
             source={{ uri: gif }}
-            style={{ alignSelf: 'stretch', height: 200, marginHorizontal: 16 }}
-            borderRadius={12}
+            style={{
+              alignSelf: 'stretch',
+              height: Size.MemeHeight,
+              marginHorizontal: Size.ContainerPaddingHorizontal
+            }}
+            borderRadius={Size.MemeRadius}
           />
           <View style={styles.inputsContainer}>
             {this.state.subs.map((text: string, index: number) => (

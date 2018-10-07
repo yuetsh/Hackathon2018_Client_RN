@@ -5,6 +5,7 @@ import styles from './MemeItem.styles'
 import { Meme } from '../services/request'
 import i18n from '../services/i18n'
 import CachedImage from './CachedImage'
+import { Size } from '../services/uikit'
 
 interface MemeItemProps extends NavigationScreenProps {
   item: Meme
@@ -24,8 +25,8 @@ class MemeItem extends React.Component<MemeItemProps> {
           <CachedImage
             source={{ uri: item.cover }}
             resizeMode='cover'
-            borderRadius={12}
-            style={{ alignSelf: 'stretch', height: 200 }}
+            borderRadius={Size.MemeRadius}
+            style={{ alignSelf: 'stretch', height: Size.MemeHeight }}
           />
           <Text style={styles.text}>{i18n.t(item.name)}</Text>
         </View>

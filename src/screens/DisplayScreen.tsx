@@ -4,6 +4,7 @@ import styles from './DisplayScreen.styles'
 import { NavigationScreenProps } from 'react-navigation'
 import i18n from '../services/i18n'
 import RNFetchBlob from 'rn-fetch-blob'
+import { Size } from '../services/uikit'
 
 class DisplayScreen extends React.Component<NavigationScreenProps> {
   static navigationOptions = {
@@ -36,8 +37,12 @@ class DisplayScreen extends React.Component<NavigationScreenProps> {
         <Image
           source={{ uri: 'file://' + path }}
           resizeMode='cover'
-          borderRadius={12}
-          style={{ alignSelf: 'stretch', height: 200, marginHorizontal: 16 }}
+          borderRadius={Size.MemeRadius}
+          style={{
+            alignSelf: 'stretch',
+            height: Size.MemeHeight,
+            marginHorizontal: Size.ContainerPaddingHorizontal
+          }}
         />
         <View style={styles.btnsWrapper}>
           <Text style={styles.text}>{link}</Text>

@@ -1,9 +1,11 @@
 import { StyleSheet } from 'react-native'
+import { Size } from '../services/uikit'
 
 export default StyleSheet.create({
+  container: {},
   inputsContainer: {
     marginTop: 12,
-    paddingHorizontal: 8
+    paddingHorizontal: Size.ContainerPaddingHorizontal
   },
   inputWrapper: {
     display: 'flex',

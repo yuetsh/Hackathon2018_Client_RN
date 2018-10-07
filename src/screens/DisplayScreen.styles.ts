@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { Color } from '../services/uikit'
+import { Color, Size } from '../services/uikit'
 
 export default StyleSheet.create({
   container: {

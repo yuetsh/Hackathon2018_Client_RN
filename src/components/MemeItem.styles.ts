@@ -1,8 +1,9 @@
 import { StyleSheet } from 'react-native'
+import { Size } from '../services/uikit'
 
 export default StyleSheet.create({
   container: {
-    padding: 8,
+    paddingHorizontal: Size.ContainerPaddingHorizontal,
     alignItems: 'center'
   },
   text: {

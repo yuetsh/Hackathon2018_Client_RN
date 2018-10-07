@@ -18,5 +18,8 @@ export const Size = {
   DeviceWidth: WindowDimensions.width,
   DeviceHeight: WindowDimensions.height,
   StatusBarHeight: 20,
-  NavBarHeight: 44
+  NavBarHeight: 44,
+  ContainerPaddingHorizontal: 8,
+  MemeRadius: 6,
+  MemeHeight: Math.round((Dimensions.get('window').width - 2 * 8) * 185 / 316)
 }
