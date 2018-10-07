@@ -141,7 +141,7 @@ dependencies {
     implementation project(':react-native-splash-screen')
     implementation project(':rn-fetch-blob')
     implementation project(':react-native-code-push')
-    compimplementationile project(':react-native-languages')
+    implementation project(':react-native-languages')
     implementation project(':appcenter-crashes')
     implementation project(':appcenter-analytics')
     implementation project(':appcenter')
