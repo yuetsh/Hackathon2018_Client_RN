@@ -14,6 +14,7 @@
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* Hackathon2018_Client_RNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Hackathon2018_Client_RNTests.m */; };
 		05139DF22164BD35006F66BA /* libRNLanguages.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05139DEF2164BC40006F66BA /* libRNLanguages.a */; };
+		05193E8C216A0D1000EA9C0F /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05193E8B216A0CF900EA9C0F /* libSplashScreen.a */; };
 		056204F321664360003C0054 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 056204C921664351003C0054 /* libCodePush.a */; };
 		056204F421664379003C0054 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0516A0C0216640DE00594DA6 /* libz.tbd */; };
 		057EBAF3216723A4001199CE /* libRNFetchBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 057EBAF02167236E001199CE /* libRNFetchBlob.a */; };
@@ -105,6 +106,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28471D9B043800D4039D;
 			remoteInfo = "RNLanguages-tvOS";
+		};
+		05193E8A216A0CF900EA9C0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05193E86216A0CF900EA9C0F /* SplashScreen.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D7682761D8E76B80014119E;
+			remoteInfo = SplashScreen;
 		};
 		051F30A42164716C00F1A942 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -394,6 +402,7 @@
 		05139DC02164AFA7006F66BA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		05139DE92164BC40006F66BA /* RNLanguages.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNLanguages.xcodeproj; path = "../node_modules/react-native-languages/ios/RNLanguages.xcodeproj"; sourceTree = "<group>"; };
 		0516A0C0216640DE00594DA6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		05193E86216A0CF900EA9C0F /* SplashScreen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SplashScreen.xcodeproj; path = "../node_modules/react-native-splash-screen/ios/SplashScreen.xcodeproj"; sourceTree = "<group>"; };
 		056204C021664351003C0054 /* CodePush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
 		057EBABF2167236E001199CE /* RNFetchBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFetchBlob.xcodeproj; path = "../node_modules/rn-fetch-blob/ios/RNFetchBlob.xcodeproj"; sourceTree = "<group>"; };
 		0DCB254FD2F6BBE13D31F23F /* Pods-Hackathon2018_Client_RN-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2018_Client_RN-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2018_Client_RN-tvOSTests/Pods-Hackathon2018_Client_RN-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -446,6 +455,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05193E8C216A0D1000EA9C0F /* libSplashScreen.a in Frameworks */,
 				057EBAF3216723A4001199CE /* libRNFetchBlob.a in Frameworks */,
 				056204F421664379003C0054 /* libz.tbd in Frameworks */,
 				056204F321664360003C0054 /* libCodePush.a in Frameworks */,
@@ -560,6 +570,14 @@
 			children = (
 				05139DEF2164BC40006F66BA /* libRNLanguages.a */,
 				05139DF12164BC40006F66BA /* libRNLanguages-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05193E87216A0CF900EA9C0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05193E8B216A0CF900EA9C0F /* libSplashScreen.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -706,6 +724,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				05193E86216A0CF900EA9C0F /* SplashScreen.xcodeproj */,
 				057EBABF2167236E001199CE /* RNFetchBlob.xcodeproj */,
 				056204C021664351003C0054 /* CodePush.xcodeproj */,
 				05139DE92164BC40006F66BA /* RNLanguages.xcodeproj */,
@@ -975,6 +994,10 @@
 					ProductGroup = 05139DEA2164BC40006F66BA /* Products */;
 					ProjectRef = 05139DE92164BC40006F66BA /* RNLanguages.xcodeproj */;
 				},
+				{
+					ProductGroup = 05193E87216A0CF900EA9C0F /* Products */;
+					ProjectRef = 05193E86216A0CF900EA9C0F /* SplashScreen.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -1034,6 +1057,13 @@
 			fileType = archive.ar;
 			path = "libRNLanguages-tvOS.a";
 			remoteRef = 05139DF02164BC40006F66BA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		05193E8B216A0CF900EA9C0F /* libSplashScreen.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSplashScreen.a;
+			remoteRef = 05193E8A216A0CF900EA9C0F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		051F30A52164716C00F1A942 /* libAppCenterReactNative.a */ = {
@@ -1647,6 +1677,8 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/react-native-code-push/ios",
 				);
 				INFOPLIST_FILE = Hackathon2018_Client_RN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1782,6 +1814,8 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/react-native-code-push/ios",
 				);
 				INFOPLIST_FILE = Hackathon2018_Client_RN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1808,6 +1842,8 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/react-native-code-push/ios",
 				);
 				INFOPLIST_FILE = Hackathon2018_Client_RN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
