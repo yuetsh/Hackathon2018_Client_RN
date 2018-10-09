@@ -117,7 +117,9 @@ class EditingScreen extends React.Component<
               </View>
             ))}
           </View>
-          <Button title={i18n.t('editing_btn')} onPress={this.generate} />
+          <View style={styles.buttonWrapper}>
+            <Button title={i18n.t('editing_btn')} onPress={this.generate} />
+          </View>
           <Button title={i18n.t('home_btn')} onPress={this.backToList} />
         </ScrollView>
         <Loading mode='modal' visible={this.state.loading} />

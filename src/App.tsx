@@ -48,7 +48,7 @@ export default class App extends React.Component {
         </SafeAreaView>
       ),
       android: (
-        <View style={{ flex: 1 }}>
+        <View style={{ flex: 1, paddingTop: 10 }}>
           <MainStack />
         </View>
       )

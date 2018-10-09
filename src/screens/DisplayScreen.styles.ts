@@ -9,6 +9,9 @@ export default StyleSheet.create({
   btnsWrapper: {
     marginTop: 20
   },
+  btnWrapper: {
+    marginBottom: 8
+  },
   text: {
     alignSelf: 'center',
     fontSize: 18,

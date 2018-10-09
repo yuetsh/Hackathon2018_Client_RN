@@ -1,11 +1,12 @@
 import React from 'react'
-import { FlatList, View } from 'react-native'
+import { FlatList, View, Button } from 'react-native'
 import { NavigationScreenProps } from 'react-navigation'
 import MemeItem from '../components/MemeItem'
 import styles from './HomeScreen.styles'
 import { listMemes, Meme } from '../services/request'
 import Loading from '../components/Loading'
 import i18n from '../services/i18n'
+import CachedImage from '../components/CachedImage'
 
 // import codePush from 'react-native-code-push'
 
@@ -28,6 +29,10 @@ class HomeScreen extends React.Component<NavigationScreenProps> {
     this.setState({ data })
   }
 
+  clearCache = async () => {
+    await CachedImage.flush()
+  }
+
   renderItem = ({ item }: { item: Meme }) => {
     return <MemeItem item={item} />
   }
@@ -45,12 +50,13 @@ class HomeScreen extends React.Component<NavigationScreenProps> {
       return <Loading mode='fullscreen' />
     }
     return (
-      <FlatList
+      <>'        \' \' \' '<FlatList
         data={this.state.data}
         renderItem={this.renderItem}
         keyExtractor={this.keyExtractor}
         ItemSeparatorComponent={this.renderSeparator}
-      />
+      />' '<Button onPress={this.clearCache} title='Clear Cache' />' '
+      </>
     )
   }
 }

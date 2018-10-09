@@ -20,5 +20,8 @@ export default StyleSheet.create({
   input: {
     fontSize: 18,
     flex: 1
+  },
+  buttonWrapper: {
+    marginBottom: 8
   }
 })

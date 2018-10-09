@@ -46,10 +46,18 @@ class DisplayScreen extends React.Component<NavigationScreenProps> {
         />
         <View style={styles.btnsWrapper}>
           <Text style={styles.text}>{link}</Text>
-          <Button title={i18n.t('download_btn')} onPress={this.download} />
-          <Button title={i18n.t('share_btn')} onPress={this.share} />
-          <Button title={i18n.t('new_btn')} onPress={this.goBack} />
-          <Button title={i18n.t('home_btn')} onPress={this.goList} />
+          <View style={styles.btnWrapper}>
+            <Button title={i18n.t('download_btn')} onPress={this.download} />
+          </View>
+          <View style={styles.btnWrapper}>
+            <Button title={i18n.t('share_btn')} onPress={this.share} />
+          </View>
+          <View style={styles.btnWrapper}>
+            <Button title={i18n.t('new_btn')} onPress={this.goBack} />
+          </View>
+          <View style={styles.btnWrapper}>
+            <Button title={i18n.t('home_btn')} onPress={this.goList} />
+          </View>
         </View>
       </View>
     )
