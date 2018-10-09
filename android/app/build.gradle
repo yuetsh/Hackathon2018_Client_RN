@@ -138,7 +138,6 @@ android {
 }
 
 dependencies {
-    implementation project(':react-native-splash-screen')
     implementation project(':rn-fetch-blob')
     implementation project(':react-native-code-push')
     implementation project(':react-native-languages')
