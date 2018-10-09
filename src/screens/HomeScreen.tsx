@@ -50,13 +50,15 @@ class HomeScreen extends React.Component<NavigationScreenProps> {
       return <Loading mode='fullscreen' />
     }
     return (
-      <>'        \' \' \' '<FlatList
-        data={this.state.data}
-        renderItem={this.renderItem}
-        keyExtractor={this.keyExtractor}
-        ItemSeparatorComponent={this.renderSeparator}
-      />' '<Button onPress={this.clearCache} title='Clear Cache' />' '
-      </>
+      <React.Fragment>
+        <FlatList
+          data={this.state.data}
+          renderItem={this.renderItem}
+          keyExtractor={this.keyExtractor}
+          ItemSeparatorComponent={this.renderSeparator}
+        />
+        <Button onPress={this.clearCache} title='Clear Cache' />
+      </React.Fragment>
     )
   }
 }
