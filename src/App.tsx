@@ -28,7 +28,7 @@ const MainStack = createStackNavigator(
 
 export default class App extends React.Component {
   componentDidMount () {
-    SplashScreen.hide()
+    Platform.OS === 'ios' && SplashScreen.hide()
     RNLanguages.addEventListener('change', this.onLanguagesChange)
   }
 
