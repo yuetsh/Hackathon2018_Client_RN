@@ -17,7 +17,7 @@ const MainStack = createStackNavigator(
   },
   {
     mode: 'card',
-    headerMode: 'none',
+    headerMode: Platform.OS === 'ios' ? 'none' : 'float',
     initialRouteName: 'Home',
     headerTransitionPreset: 'fade-in-place',
     cardStyle: {
@@ -41,10 +41,17 @@ export default class App extends React.Component {
   }
 
   render () {
-    return (
-      <SafeAreaView style={{ flex: 1 }}>
-        <MainStack />
-      </SafeAreaView>
-    )
+    return Platform.select({
+      ios: (
+        <SafeAreaView style={{ flex: 1 }}>
+          <MainStack />
+        </SafeAreaView>
+      ),
+      android: (
+        <View style={{ flex: 1 }}>
+          <MainStack />
+        </View>
+      )
+    })
   }
 }
