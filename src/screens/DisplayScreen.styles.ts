@@ -15,6 +15,6 @@ export default StyleSheet.create({
   text: {
     alignSelf: 'center',
     fontSize: 18,
-    marginBottom: 8
+    margin: 8
   }
 })
