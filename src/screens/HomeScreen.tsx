@@ -1,12 +1,12 @@
 import React from 'react'
-import { FlatList, View, Button, AsyncStorage } from 'react-native'
+import { FlatList, View, AsyncStorage } from 'react-native'
 import { NavigationScreenProps } from 'react-navigation'
 import MemeItem from '../components/MemeItem'
 import styles from './HomeScreen.styles'
 import { listMemes, Meme } from '../services/request'
 import Loading from '../components/Loading'
 import i18n from '../services/i18n'
-import CachedImage from '../components/CachedImage'
+import GamePanel from '../components/GamePanel'
 
 // import codePush from 'react-native-code-push'
 
@@ -28,10 +28,6 @@ class HomeScreen extends React.Component<NavigationScreenProps> {
     const data = await listMemes()
     this.setState({ data })
     await AsyncStorage.setItem('HomeData', JSON.stringify(data))
-  }
-
-  clearCache = async () => {
-    await AsyncStorage.removeItem('HomeData')
   }
 
   renderItem = ({ item }: { item: Meme }) => {
@@ -58,7 +54,7 @@ class HomeScreen extends React.Component<NavigationScreenProps> {
           keyExtractor={this.keyExtractor}
           ItemSeparatorComponent={this.renderSeparator}
         />
-        <Button onPress={this.clearCache} title='Clear Cache' />
+        <GamePanel visible={true} />
       </React.Fragment>
     )
   }

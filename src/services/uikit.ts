@@ -3,7 +3,12 @@ import { Dimensions, PixelRatio } from 'react-native'
 const WindowDimensions = Dimensions.get('window')
 
 export const AssetImage = {
-  Loading: require('../assets/images/huaji.jpg')
+  Loading: require('../assets/images/huaji.jpg'),
+  FlappyBirdBG: require('../assets/images/bg.png'),
+  Bird1: require('../assets/images/bird1.png'),
+  Bird2: require('../assets/images/bird2.png'),
+  Bird3: require('../assets/images/bird3.png'),
+  Brow: require('../assets/images/flappybird-bg-brow.png')
 }
 
 export const Color = {
