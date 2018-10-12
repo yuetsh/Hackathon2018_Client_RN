@@ -11,10 +11,5 @@ export default StyleSheet.create({
   },
   btnWrapper: {
     marginBottom: 8
-  },
-  text: {
-    alignSelf: 'center',
-    fontSize: 18,
-    margin: 8
   }
 })

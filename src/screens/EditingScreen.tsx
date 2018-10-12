@@ -8,19 +8,21 @@ import {
   Keyboard,
   NativeSyntheticEvent,
   NativeTouchEvent,
-  Alert
+  Alert,
+  AsyncStorage
 } from 'react-native'
 import { NavigationScreenProps } from 'react-navigation'
 import styles from './EditingScreen.styles'
 import { KeyboardAvoidingView } from 'react-native'
 import i18n from '../services/i18n'
 import Loading from '../components/Loading'
-import { createMeme } from '../services/request'
+import { createMeme, Meme } from '../services/request'
 import CachedImage from '../components/CachedImage'
 import { Size } from '../services/uikit'
 
 interface EditingScreenState {
   loading: boolean
+  meme: Meme
   subs: string[]
 }
 
@@ -33,15 +35,26 @@ class EditingScreen extends React.Component<
   }
   readonly state = {
     loading: false,
-    subs: new Array(this.props.navigation.getParam('placeholders').length).fill(
-      ''
-    )
+    meme: {
+      name: '',
+      cover: '',
+      gif: '',
+      placeholders: []
+    },
+    subs: ['']
   }
 
-  componentWillUnmount () {
-    this.setState({
-      subs: []
-    })
+  async componentDidMount () {
+    const dataStr = await AsyncStorage.getItem('HomeData')
+    if (dataStr) {
+      const homeData = JSON.parse(dataStr) as Meme[]
+      const name = this.props.navigation.getParam('name')
+      const meme = homeData.filter(data => data.name === name)[0]
+      this.setState({
+        meme,
+        subs: [...meme.placeholders].fill('')
+      })
+    }
   }
 
   backToList = () => {
@@ -49,7 +62,7 @@ class EditingScreen extends React.Component<
   }
 
   onChange = (index: number) => (val: string) => {
-    const newSubs: string[] = this.state.subs
+    const newSubs: string[] = [...this.state.subs]
     newSubs[index] = val
     this.setState({
       subs: newSubs
@@ -64,12 +77,17 @@ class EditingScreen extends React.Component<
     }
     Keyboard.dismiss()
     this.setState({ loading: true })
-    const name = this.props.navigation.getParam('name')
+    const name = this.state.meme.name
     const data = await createMeme({ name, subs: this.state.subs })
     if (data && data.link) {
       const cache = await CachedImage.cacheFile(data.link)
-      const newData = { ...data, localFilePath: cache.localFilePath }
-      this.props.navigation.navigate('Display', newData)
+      const newData = {
+        ...data,
+        template: name,
+        localFilePath: cache.localFilePath
+      }
+      await AsyncStorage.setItem('NewMeme', JSON.stringify(newData))
+      this.props.navigation.navigate('Display')
       this.setState({ loading: false })
     } else {
       this.setState({ loading: false })
@@ -77,9 +95,9 @@ class EditingScreen extends React.Component<
   }
 
   render () {
-    const { navigation } = this.props
-    const placeholders = this.props.navigation.getParam('placeholders')
-    const gif = navigation.getParam('gif')
+    const { meme: { gif, placeholders } } = this.state
+    if (!gif) return null
+    console.log(placeholders, '[placeholders]')
     return (
       <KeyboardAvoidingView behavior='position'>
         <ScrollView

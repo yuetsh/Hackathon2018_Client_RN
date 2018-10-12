@@ -6,7 +6,6 @@ const API_URL = config.host + config.prefix
 
 export interface Meme {
   name: string
-  name_en: string
   cover: string
   gif: string
   placeholders: string[]
@@ -23,13 +22,13 @@ interface CreateMemeBody {
   subs: string[]
 }
 
-interface NewMeme {
+export interface NewMeme {
   id: string
   link: string
   name: string
   width: number
   height: number
-  type: 'images/gif'
+  type: string
 }
 
 export async function createMeme (

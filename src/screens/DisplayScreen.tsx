@@ -1,18 +1,61 @@
 import React from 'react'
-import { Button, Platform, Text, View, Image } from 'react-native'
+import {
+  Button,
+  Platform,
+  View,
+  Image,
+  AsyncStorage,
+  TouchableWithoutFeedback,
+  Linking
+} from 'react-native'
 import styles from './DisplayScreen.styles'
 import { NavigationScreenProps } from 'react-navigation'
 import i18n from '../services/i18n'
 import RNFetchBlob from 'rn-fetch-blob'
 import { Size } from '../services/uikit'
+import { NewMeme } from '../services/request'
 
-class DisplayScreen extends React.Component<NavigationScreenProps> {
+interface Meme extends NewMeme {
+  template: string
+  localFilePath: string
+}
+
+interface NavigationScreenState {
+  meme: Meme
+}
+
+class DisplayScreen extends React.Component<
+  NavigationScreenProps,
+  NavigationScreenState
+  > {
   static navigationOptions = {
     title: i18n.t('display_title')
   }
+
+  readonly state = {
+    meme: {
+      template: '',
+      localFilePath: '',
+      id: '',
+      link: '',
+      name: '',
+      width: 0,
+      height: 0,
+      type: 'images/gif'
+    }
+  }
+
+  async componentDidMount () {
+    const meme = await AsyncStorage.getItem('NewMeme')
+    meme && this.setState({ meme: JSON.parse(meme) })
+  }
+
+  open = (url: string) => async () => {
+    await Linking.openURL(url)
+  }
+
   download = async () => {
-    const type = this.props.navigation.getParam('type')
-    const path = this.props.navigation.getParam('localFilePath')
+    const { meme: { type, localFilePath: path } } = this.state
     Platform.OS === 'ios'
       ? RNFetchBlob.ios.openDocument(path)
       : RNFetchBlob.android.actionViewIntent(path, type)
@@ -21,7 +64,8 @@ class DisplayScreen extends React.Component<NavigationScreenProps> {
   share = () => {}
 
   goBack = () => {
-    this.props.navigation.goBack()
+    const { meme: { template } } = this.state
+    this.props.navigation.replace('Editing', { name: template })
   }
 
   goList = () => {
@@ -29,23 +73,26 @@ class DisplayScreen extends React.Component<NavigationScreenProps> {
   }
 
   render () {
-    const { navigation } = this.props
-    const link = navigation.getParam('link')
-    const path = navigation.getParam('localFilePath')
+    if (!this.state.meme.name) return null
+    const { meme: { localFilePath: path, link } } = this.state
     return (
       <View style={styles.container}>
-        <Image
-          source={{ uri: 'file://' + path }}
-          resizeMode='cover'
-          borderRadius={Size.MemeRadius}
-          style={{
-            alignSelf: 'stretch',
-            height: Size.MemeHeight,
-            marginHorizontal: Size.ContainerPaddingHorizontal
-          }}
-        />
+        <TouchableWithoutFeedback onLongPress={this.open(link)}>
+          <Image
+            source={{ uri: 'file://' + path }}
+            resizeMode='cover'
+            borderRadius={Size.MemeRadius}
+            style={{
+              alignSelf: 'stretch',
+              height: Size.MemeHeight,
+              marginHorizontal: Size.ContainerPaddingHorizontal
+            }}
+          />
+        </TouchableWithoutFeedback>
         <View style={styles.btnsWrapper}>
-          <Text style={styles.text}>{link}</Text>
+          <View style={styles.btnWrapper}>
+            <Button title={i18n.t('open_btn')} onPress={this.open(link)} />
+          </View>
           <View style={styles.btnWrapper}>
             <Button title={i18n.t('download_btn')} onPress={this.download} />
           </View>

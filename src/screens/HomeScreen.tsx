@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlatList, View, Button } from 'react-native'
+import { FlatList, View, Button, AsyncStorage } from 'react-native'
 import { NavigationScreenProps } from 'react-navigation'
 import MemeItem from '../components/MemeItem'
 import styles from './HomeScreen.styles'
@@ -27,10 +27,11 @@ class HomeScreen extends React.Component<NavigationScreenProps> {
   async componentDidMount () {
     const data = await listMemes()
     this.setState({ data })
+    await AsyncStorage.setItem('HomeData', JSON.stringify(data))
   }
 
   clearCache = async () => {
-    await CachedImage.flush()
+    await AsyncStorage.removeItem('HomeData')
   }
 
   renderItem = ({ item }: { item: Meme }) => {

@@ -14,7 +14,7 @@ interface MemeItemProps extends NavigationScreenProps {
 class MemeItem extends React.Component<MemeItemProps> {
   onPress = () => {
     const { item } = this.props
-    this.props.navigation.navigate('Editing', item)
+    this.props.navigation.navigate('Editing', { name: item.name })
   }
 
   render () {
