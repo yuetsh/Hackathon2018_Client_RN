@@ -8,7 +8,9 @@ export const AssetImage = {
   Bird1: require('../assets/images/bird1.png'),
   Bird2: require('../assets/images/bird2.png'),
   Bird3: require('../assets/images/bird3.png'),
-  Brow: require('../assets/images/flappybird-bg-brow.png')
+  Brow: require('../assets/images/bg-brow.png'),
+  PipeDown: require('../assets/images/pipe-down.png'),
+  PipeUp: require('../assets/images/pipe-up.png')
 }
 
 export const Color = {

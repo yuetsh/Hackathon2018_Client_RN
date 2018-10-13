@@ -3,7 +3,8 @@ import {
   View,
   ImageBackground,
   Image,
-  TouchableWithoutFeedback
+  TouchableWithoutFeedback,
+  Text
 } from 'react-native'
 import styles from './GamePanel.styles'
 import { AssetImage, Size } from '../services/uikit'
@@ -16,6 +17,7 @@ class GamePanel extends React.Component<GamePanelProps> {
   timer = 0
   timer1 = 0
   timer2 = 0
+  timer3 = 0
   browWidth = Size.DeviceWidth * 0.8 + 33
 
   readonly state = {
@@ -24,13 +26,15 @@ class GamePanel extends React.Component<GamePanelProps> {
     r: 0,
     bird: AssetImage.Bird1,
     x0: 0,
-    x1: this.browWidth
+    x1: this.browWidth,
+    x2: Size.DeviceWidth * 0.8,
+    x3: Size.DeviceWidth * 0.8
   }
 
   componentDidMount () {
     this.timer1 = setInterval(() => {
       this.setState({
-        source:
+        bird:
           this.state.bird === AssetImage.Bird1
             ? AssetImage.Bird2
             : this.state.bird === AssetImage.Bird2
@@ -42,13 +46,22 @@ class GamePanel extends React.Component<GamePanelProps> {
       this.setState({ x0: this.state.x0 - 1, x1: this.state.x1 - 1 })
       if (this.state.x0 <= -this.browWidth) this.setState({ x0: 0 })
       if (this.state.x1 <= 0) this.setState({ x1: this.browWidth })
-    }, 16)
+    }, 10)
+    this.timer3 = setInterval(() => {
+      if (this.state.x2 <= -80) {
+        this.setState({ x2: Size.DeviceWidth * 0.8 + 80 })
+      }
+      this.setState({
+        x2: this.state.x2 - 1
+      })
+    }, 10)
   }
 
   componentWillUnmount () {
     clearInterval(this.timer)
     clearInterval(this.timer1)
     clearInterval(this.timer2)
+    clearInterval(this.timer3)
   }
 
   tap = () => {
@@ -57,11 +70,15 @@ class GamePanel extends React.Component<GamePanelProps> {
     this.setState({ y: this.state.y - 30, r: -20 })
     if (this.timer) return
     this.timer = setInterval(() => {
-      if (this.state.y > 320) return
+      if (this.state.y > 310) {
+        this.setState({
+          y: 60
+        })
+      }
       this.setState({
-        y: this.state.y + 2
+        y: this.state.y + 2 // 下降为匀速运动
       })
-    }, 16)
+    }, 10)
   }
 
   render () {
@@ -78,9 +95,17 @@ class GamePanel extends React.Component<GamePanelProps> {
               style={{
                 position: 'absolute',
                 left: 120,
-                top: this.state.y
+                top: this.state.y,
+                zIndex: 100
               }}
             >
+              <Text
+                style={{
+                  transform: [{ translateX: -15 }]
+                }}
+              >
+                傻鸟一只
+              </Text>
               <Image
                 source={this.state.bird}
                 style={{
@@ -90,18 +115,7 @@ class GamePanel extends React.Component<GamePanelProps> {
                 }}
               />
             </View>
-            <View
-              style={{
-                width: Size.DeviceWidth / 5 * 4,
-                position: 'absolute',
-                height: 56,
-                left: 0,
-                bottom: 0,
-                overflow: 'hidden',
-                borderBottomLeftRadius: 12,
-                borderBottomRightRadius: 12
-              }}
-            >
+            <View style={styles.browWrapper}>
               <Image
                 source={AssetImage.Brow}
                 style={{
@@ -114,6 +128,47 @@ class GamePanel extends React.Component<GamePanelProps> {
                 style={{
                   position: 'absolute',
                   left: this.state.x1
+                }}
+              />
+            </View>
+            <View
+              style={{
+                position: 'absolute',
+                top: 0,
+                bottom: 55,
+                left: this.state.x2
+              }}
+            >
+              <Image
+                source={AssetImage.PipeDown}
+                style={{
+                  position: 'absolute',
+                  top: 0
+                }}
+              />
+              <Text
+                style={{
+                  position: 'absolute',
+                  top: 130,
+                  transform: [{ translateX: -40 }]
+                }}
+              >
+                毫无卵用的柱子1
+              </Text>
+              <Text
+                style={{
+                  position: 'absolute',
+                  top: 205,
+                  transform: [{ translateX: -40 }]
+                }}
+              >
+                毫无卵用的柱子2
+              </Text>
+              <Image
+                source={AssetImage.PipeUp}
+                style={{
+                  position: 'absolute',
+                  bottom: 0
                 }}
               />
             </View>

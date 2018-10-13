@@ -11,12 +11,24 @@ export default StyleSheet.create({
     backgroundColor: Color.Mask,
     zIndex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    overflow: 'hidden'
   },
   panel: {
     width: Size.DeviceWidth / 5 * 4,
     height: Size.DeviceHeight / 2,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    overflow: 'hidden'
+  },
+  browWrapper: {
+    width: Size.DeviceWidth / 5 * 4,
+    position: 'absolute',
+    height: 56,
+    left: 0,
+    bottom: 0,
+    overflow: 'hidden',
+    borderBottomLeftRadius: 12,
+    borderBottomRightRadius: 12
   }
 })
