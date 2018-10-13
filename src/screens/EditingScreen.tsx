@@ -97,7 +97,6 @@ class EditingScreen extends React.Component<
   render () {
     const { meme: { gif, placeholders } } = this.state
     if (!gif) return null
-    console.log(placeholders, '[placeholders]')
     return (
       <KeyboardAvoidingView behavior='position'>
         <ScrollView

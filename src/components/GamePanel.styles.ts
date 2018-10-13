@@ -12,7 +12,8 @@ export default StyleSheet.create({
     zIndex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    overflow: 'hidden'
+    overflow: 'hidden',
+    height: Size.DeviceHeight
   },
   panel: {
     width: Size.DeviceWidth / 5 * 4,

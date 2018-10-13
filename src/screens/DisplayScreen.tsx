@@ -65,7 +65,7 @@ class DisplayScreen extends React.Component<
 
   goBack = () => {
     const { meme: { template } } = this.state
-    this.props.navigation.replace('Editing', { name: template })
+    this.props.navigation.push('Editing', { name: template })
   }
 
   goList = () => {

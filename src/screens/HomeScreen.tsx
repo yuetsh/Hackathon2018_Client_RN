@@ -7,6 +7,7 @@ import { listMemes, Meme } from '../services/request'
 import Loading from '../components/Loading'
 import i18n from '../services/i18n'
 import GamePanel from '../components/GamePanel'
+// import GamePanel from '../components/GamePanel'
 
 // import codePush from 'react-native-code-push'
 
@@ -54,7 +55,7 @@ class HomeScreen extends React.Component<NavigationScreenProps> {
           keyExtractor={this.keyExtractor}
           ItemSeparatorComponent={this.renderSeparator}
         />
-        <GamePanel visible={true} />
+        {/* <GamePanel visible={true} /> */}
       </React.Fragment>
     )
   }
