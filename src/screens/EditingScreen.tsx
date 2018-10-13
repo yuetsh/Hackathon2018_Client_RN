@@ -18,7 +18,8 @@ import i18n from '../services/i18n'
 import { createMeme, Meme } from '../services/request'
 import CachedImage from '../components/CachedImage'
 import { Size } from '../services/uikit'
-import GamePanel from '../components/GamePanel'
+// import GamePanel from '../components/GamePanel'
+import Loading from '../components/Loading'
 
 interface EditingScreenState {
   loading: boolean
@@ -139,7 +140,7 @@ class EditingScreen extends React.Component<
           </View>
           <Button title={i18n.t('home_btn')} onPress={this.backToList} />
         </ScrollView>
-        <GamePanel visible={this.state.loading} />
+        <Loading visible={this.state.loading} />
       </KeyboardAvoidingView>
     )
   }
