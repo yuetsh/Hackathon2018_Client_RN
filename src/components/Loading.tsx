@@ -5,7 +5,6 @@ import styles from './Loading.styles'
 import i18n from '../services/i18n'
 
 interface LoadingProps {
-  visible: boolean
   mode: 'fullscreen' | 'modal' | 'inner'
 }
 
@@ -44,8 +43,6 @@ class Loading extends React.Component<LoadingProps> {
   }
 
   render () {
-    if (!this.props.visible) return null
-
     const spin = this.spinValue.interpolate({
       inputRange: [0, 1],
       outputRange: ['0deg', '360deg']

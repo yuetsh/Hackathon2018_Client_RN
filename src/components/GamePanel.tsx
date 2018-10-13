@@ -9,11 +9,7 @@ import {
 import styles from './GamePanel.styles'
 import { AssetImage, Size } from '../services/uikit'
 
-interface GamePanelProps {
-  visible: boolean
-}
-
-class GamePanel extends React.Component<GamePanelProps> {
+class GamePanel extends React.Component {
   timer = 0
   timer1 = 0
   timer2 = 0
@@ -82,7 +78,6 @@ class GamePanel extends React.Component<GamePanelProps> {
   }
 
   render () {
-    if (!this.props.visible) return null
     return (
       <TouchableWithoutFeedback onPress={this.tap}>
         <View style={styles.container}>

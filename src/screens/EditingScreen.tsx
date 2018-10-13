@@ -139,7 +139,7 @@ class EditingScreen extends React.Component<
           </View>
           <Button title={i18n.t('home_btn')} onPress={this.backToList} />
         </ScrollView>
-        <GamePanel visible={this.state.loading} />
+        {this.state.loading && <GamePanel />}
       </KeyboardAvoidingView>
     )
   }

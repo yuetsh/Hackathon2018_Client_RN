@@ -5,7 +5,7 @@ import Indicator from './Indicator'
 import { Size } from '../services/uikit'
 
 const CachedImage = imageCacheHoc(Image, {
-  fileHostWhitelist: ['localhost', 'i.loli.net'],
+  fileHostWhitelist: ['localhost', 'i.loli.net', 'i.imgur.com'],
   fileDirName: 'zhen-xiang-app-image-cache',
   defaultPlaceholder: {
     component: Indicator,
