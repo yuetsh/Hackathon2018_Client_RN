@@ -6,7 +6,7 @@ import styles from './HomeScreen.styles'
 import { listMemes, Meme } from '../services/request'
 import Loading from '../components/Loading'
 import i18n from '../services/i18n'
-import GamePanel from '../components/GamePanel'
+// import GamePanel from '../components/GamePanel'
 
 // import GamePanel from '../components/GamePanel'
 
@@ -49,15 +49,12 @@ class HomeScreen extends React.Component<NavigationScreenProps> {
       return <Loading mode='fullscreen' />
     }
     return (
-      <React.Fragment>
-        <FlatList
-          data={this.state.data}
-          renderItem={this.renderItem}
-          keyExtractor={this.keyExtractor}
-          ItemSeparatorComponent={this.renderSeparator}
-        />
-        <Loading visible={true} />
-      </React.Fragment>
+      <FlatList
+        data={this.state.data}
+        renderItem={this.renderItem}
+        keyExtractor={this.keyExtractor}
+        ItemSeparatorComponent={this.renderSeparator}
+      />
     )
   }
 }
